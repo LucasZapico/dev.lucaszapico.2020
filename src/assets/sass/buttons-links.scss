@@ -1,0 +1,83 @@
+button {
+  font-family: $base-family;
+}
+
+a {
+  font-family: $base-family;
+  color: #333333;
+
+}
+
+.btn {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  border: solid $color-d 1px;
+  transition: all ease-in-out 0.2s;
+  max-width: 150px;
+  //  todo: add awesome hover and active
+  &--primary {
+    &__invert {
+      background-color: $color-pri-1;
+    }
+  }
+  &--secondary {
+    &__invert {
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-pri-1;
+    color: $color-d;
+  }
+
+  &:active {
+    background-color: $color-pri-1;
+    color: $color-d;
+  }
+}
+
+a {
+  transition: all ease-in-out 0.2s;
+  color: $primary-type-color;
+  &:hover,
+  &:focus {
+    color: $color-pri-1;
+  }
+
+  &:active {
+    color: $color-pri-1;
+  }
+}
+
+a,
+button,
+.btn {
+  & > svg {
+    transition: all ease-in-out 0.2s;
+    font-size: 1.5rem;
+    margin-bottom: -5px;
+  }
+}
+
+.icon {
+  &--arrow {
+    &:hover,
+    &:focus {
+      & > svg {
+        margin-left: 3px;
+        transform: scaleX(1.3);
+      }
+    }
+
+    &:active {
+      & > svg {
+        margin-left: 3px;
+        transform: scaleX(1.3);
+      }
+    }
+  }
+}

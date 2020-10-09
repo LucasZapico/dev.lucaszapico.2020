@@ -1,0 +1,52 @@
+@import "./base.scss";
+@import "./variables";
+@import "./layout-base";
+@import "./typography";
+@import "./buttons-links.scss";
+// components
+@import "./components/footer";
+@import "./components/nav";
+@import "./components/form";
+//Pages
+@import "./pages/pages";
+@import "./pages/home";
+@import "./pages/method";
+@import "./pages/services";
+
+#l-mark {
+	animation: 8s linear infinite orbit;
+}
+#l-mark--light {
+	animation: 8s linear infinite reverse orbit;
+}
+#inner {
+	animation: 8s linear infinite scale;
+}
+
+@keyframes orbit {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes scale {
+	from {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	75% {
+		transform: scale(0.9);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}

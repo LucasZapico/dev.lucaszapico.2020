@@ -1,0 +1,84 @@
+html,
+body {
+  background-color: $color-pri-1;
+  height: 100%;
+  font-family: $base-family;
+}
+
+header {
+  z-index: 1;
+}
+
+.content--container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.content--reader {
+  max-width: 800px;
+  margin: auto;
+}
+
+// Animations
+
+[data-sal] {
+  --sal-duration: 1.5s;
+}
+
+.focus {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, $color-g 50%);
+  display: inline;
+}
+
+/***
+**
+** MOBILE
+**
+**
+***/
+
+.page-nav {
+  position: fixed;
+  top: 50%;
+  opacity: 0.5;
+  transition: all ease-in-out 0.2s;
+  & > a > svg {
+    font-size: 4rem;
+  }
+  &--prev {
+    left: 5px;
+  }
+  &--next {
+    right: 5px;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.subheader {
+  margin-bottom: 2rem;
+  color: $secondary-type-color;
+}
+
+
+// 100px and up 
+@media screen and (min-width: 100px) {}
+
+// 700px and up
+@media screen and (min-width: $media-small) {}
+
+// 960px 
+@media screen and (min-width: $media-med) {}
+
+@media screen and (min-width: $media-large) {
+    .container {
+        &__content {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $media-xlarge) {}
