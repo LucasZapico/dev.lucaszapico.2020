@@ -1,10 +1,12 @@
-// projects layout 
+
+.page {
+    padding-top: 200px;
+}
 
 .page.projects {
-
-
-
-
+    $type-scaler: 1.2;
+	$header-base-size: $type-base-size; 
+	@include typeScales($header-base-size, $type-scaler);
     // 100px and up 
     @media screen and (min-width: 100px) {
 

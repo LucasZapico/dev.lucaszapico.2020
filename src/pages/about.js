@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-plugin-transition-link"
+import Link from "gatsby-plugin-transition-link/AniLink"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"

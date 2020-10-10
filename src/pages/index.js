@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Angle from "../assets/images/angle-line.svg"
 import TransitionLink from "gatsby-plugin-transition-link"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Link from "gatsby-plugin-transition-link/AniLink"
 import { useScrollPosition } from "../hook//index"
 import { Tween, Timeline } from "react-gsap"
 import { Controller, Scene } from "react-scrollmagic"
@@ -22,24 +22,40 @@ const ProjectSection = ({ projectData, progress }) => (
         data-sal-delay="100"
         data-sal-easing="ease"
       >
-        <h2 className="project__title">{projectData.frontmatter.title}</h2>
+        <h3 className="project__title">{projectData.frontmatter.title}</h3>
 
-        <h5 className="char-100 project__subheader">
+        <h6 className="char-100 project__subheader">
           {projectData.frontmatter.subheader}
           {progress}
-        </h5>
-        <div className="project__tags">
+        </h6>
+        <div className="project__tags ">
           {projectData.frontmatter.tags.map((t, i) => (
-            <div key={i} className="project__tag kilo">
+            <div key={i} className="project__tag body__default">
               {t},
             </div>
           ))}
         </div>
       </div>
-      
-      <AniLink fade to={projectData.frontmatter.path} className="icon__arrow">
+
+      <div
+        className="project__shower"
+        data-sal="slide-right"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+      >
+        <div className="project__img">
+          <Img fluid={projectData.frontmatter.featured.childImageSharp.fluid} objectFit="contain" />
+        </div>
+      </div>
+
+      <Link
+        swipe
+        top="exit"
+        to={projectData.frontmatter.path}
+        className="icon__arrow link__primary--dark"
+      >
         More On The project{""} <IoIosArrowRoundForward />
-      </AniLink>
+      </Link>
     </div>
   </div>
 )
@@ -49,10 +65,8 @@ const IndexPage = ({ data }) => {
   const lineContainer = useRef(null)
   const [currentYPos, setCurrentYPos] = useState(0)
 
-
   const [plSt, setPlSt] = useState("show")
   // hero verb changer
-
 
   return (
     <Layout>
@@ -65,13 +79,13 @@ const IndexPage = ({ data }) => {
             objectFit="contain"
           /> */}
           <div className="hero">
-            <div className="hero__content content__container">
-              <h2 className="">Frontend Developer who Designs</h2>
-              
+            <div className="hero__content content__container margin__left--m">
+              <h2 className="">Frontend Developer who&nbsp;Designs</h2>
+
               <div>
-                <AniLink fade to="/method" className="icon__arrow">
+                <Link swipe top="exit" to="/method" className="link__primary--light icon__arrow">
                   Method <IoIosArrowRoundForward />
-                </AniLink>
+                </Link>
               </div>
               {/* <div className="hero-img__container">
                 <div className="hero__img" ref={lineContainer}>
@@ -83,24 +97,21 @@ const IndexPage = ({ data }) => {
         </div>{" "}
         <section>{/* todo: add table of contents  */}</section>
         <section className="section">
-          <div className="content__container">
-     
-     
-          </div>
+          <div className="content__container"></div>
         </section>
         <section className="section projects">
           <div className="projects__header">
             <div className="content__container">
-              <h2 className="h1">projects</h2>
+              <h2 className="h1 margin__left--m">projects</h2>
               <h5 className="subheader">
                 {/* We specialize in sustainable digital engagement solutions */}
               </h5>
             </div>
           </div>
           <div className="projects__container">
-          {edges.map(edge => (
-            <ProjectSection key={edge.node.id} projectData={edge.node} />
-          ))}
+            {edges.map(edge => (
+              <ProjectSection key={edge.node.id} projectData={edge.node} />
+            ))}
           </div>
         </section>
       </div>
@@ -119,8 +130,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    recentProjects: allMdx(
-      limit: 5
+    recentProjects: allMarkdownRemark(
+      limit: 6
       filter: {
         frontmatter: { categories: { eq: "case" }, isdraft: { eq: false } }
       }
@@ -139,33 +150,12 @@ export const pageQuery = graphql`
             categories
             tags
             featured {
-              gif {
-                src
-                exc
-              }
-              img {
-                exc
-                src {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+              childImageSharp {
+                fluid(maxWidth:400) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
-          }
-        }
-        next {
-          id
-          frontmatter {
-            path
-          }
-        }
-        previous {
-          id
-          frontmatter {
-            path
           }
         }
       }

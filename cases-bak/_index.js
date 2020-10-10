@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "../../components/layout"
+import Layout from "../src/components/layout"
 import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-function CasesIndex() {
-  
+function CasesIndex({ data }) {
+  const { edges } = data.caseIndex
+  console.log(edges)
   return (
     <Layout>
       <h1>All Cases</h1>
@@ -28,23 +29,23 @@ function CasesIndex() {
 
 export default CasesIndex
 
-// export const pageQuery = graphql`
-//   query {
-//     caseIndex: allMdx(
-//       filter: {
-//         frontmatter: { categories: { eq: "case" }, isdraft: { eq: false } }
-//       }
-//       sort: { fields: frontmatter___date_created, order: DESC }
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             path
-//             title
-//           }
-//           id
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query {
+    caseIndex: allMdx(
+      filter: {
+        frontmatter: { categories: { eq: "case" }, isdraft: { eq: false } }
+      }
+      sort: { fields: frontmatter___date_created, order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+          }
+          id
+        }
+      }
+    }
+  }
+`

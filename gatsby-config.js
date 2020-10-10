@@ -45,7 +45,7 @@ module.exports = {
         // excludePaths: ["/blog/beep-beep-lettuce"],
         height: 3,
         prependToBody: false,
-        color: "#4e2c2c",
+        color: "#1D1D1E",
         footerHeight: 500,
       },
     },
@@ -80,31 +80,6 @@ module.exports = {
         backgroundColor: "transparent",
       },
     },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        defaultLayouts: {
-          cases: require.resolve("./src/components/cases-layout.js"),
-          // default: require.resolve("./src/components/layout.js"),
-        },
-        gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 1440,
-            },
-          },
-          {
-            resolve: "gatsby-remark-prismjs",
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-            },
-          },
-        ],
-      },
-    },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {

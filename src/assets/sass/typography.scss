@@ -144,7 +144,7 @@ blockquote {
 	h6,
 	.h6,
 	.kilo {
-		font-size: $header-base-size;
+		font-size: $header-base-size * $type-scaler;
 	}
 	.body {
 		&__large {
@@ -154,6 +154,7 @@ blockquote {
 			font-size: $type-base-size;
 		}
 		&__small {
+      font-size: $type-base-size * .8;
 		}
 	}
 
@@ -213,17 +214,6 @@ blockquote {
 	h1,
 	h2,
 	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	li,
-	input,
-	textarea,
-	blockquote,
-	code,
-	strong,
-	em,
 	.char-100 {
 		max-width: 620px;
 	}
@@ -235,6 +225,17 @@ blockquote {
 	.char-50 {
 		max-width: 320px;
   }
+  h4,
+	h5,
+	h6,
+  p,
+	li,
+	input,
+	textarea,
+	blockquote,
+	code,
+	strong,
+	em,
   .char__readable {
     max-width: 520px;
   }
@@ -244,17 +245,10 @@ blockquote {
 // 960px
 
 @media screen and (min-width: $media-med) {
-	$type-scaler: 1.3;
+	$type-scaler: 1.25;
 	$header-base-size: $type-base-size; //16px;
 	@include typeScales($header-base-size, $type-scaler);
-	p,
-	li,
-	input,
-	textarea,
-	blockquote,
-	code,
-	strong,
-	em,
+	
 	.char-100 {
 		max-width: 1070px;
 	}
@@ -266,6 +260,17 @@ blockquote {
 	.char-50 {
 		max-width: 550px;
   }
+  h4,
+	h5,
+	h6,
+  p,
+	li,
+	input,
+	textarea,
+	blockquote,
+	code,
+	strong,
+	em,
   .char__readable {
     max-width: 750px;
   }
@@ -283,17 +288,6 @@ blockquote {
 	h1,
 	h2,
 	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	li,
-	input,
-	textarea,
-	blockquote,
-	code,
-	strong,
-	em,
 	.char-100 {
 		max-width: 1070px;
 	}
@@ -305,6 +299,21 @@ blockquote {
 	.char-50 {
 		max-width: 550px;
   }
+  h4,
+	h5,
+	h6,
+  p,
+	li,
+	input,
+	textarea,
+	blockquote,
+	code,
+	strong,
+	em,
+  .char__readable {
+    max-width: 750px;
+  }
+  @include char__readable(750px);
   
 
 }

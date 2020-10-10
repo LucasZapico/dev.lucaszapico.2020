@@ -17,17 +17,8 @@ const MethodPage = () => (
 
 export default MethodPage
 
-export const pageQuery = graphql`
-  query {
-    allMdx {
-      edges {
-        node {
-          frontmatter {
-            categories
-            tags
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+    
+//   }
+// `

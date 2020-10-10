@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from "./layout"
 
-const CasesLayout = ({ children }) => {
+const ProjectLayout = ({ children }) => {
   return (
     <Layout>
       <div className="page projects content--container">
@@ -12,8 +12,8 @@ const CasesLayout = ({ children }) => {
   )
 }
 
-CasesLayout.propTypes = {
+ProjectLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default CasesLayout
+export default ProjectLayout

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Mark from "../assets/images/mark.svg"
 import MarkLight from "../assets/images/mark-light.svg"
 import TransitionLink from "gatsby-plugin-transition-link"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Link from "gatsby-plugin-transition-link/AniLink"
 import { IoIosMenu, IoIosClose } from "react-icons/io"
 import { Tween, Timeline, PlayState, Controls } from "react-gsap"
 import { useCurrentWidth } from "../hook"
@@ -12,33 +12,33 @@ const PrimaryMenu = ({ width }) => (
     <ul className="nav--items">
       <div>
         <li className="nav--item h3">
-          <AniLink fade to="">
+          <Link swipe top="exit" to="/">
             Home
-          </AniLink>
+          </Link>
         </li>
         <li className="nav--item h3">
-          <AniLink fade to="/about">
+          <Link swipe top="exit" to="/about">
             About
-          </AniLink>
+          </Link>
         </li>
       </div>
       <div>
         {/* <li className="nav--item h3">
-          <AniLink fade to="/all-cases">
+          <Link swipe to="/all-cases">
             Cases
-          </AniLink>
+          </Link>
         </li> */}
 
-        <li className="nav--item h3">
-          <AniLink fade to="/method">
+        {/* <li className="nav--item h3">
+          <Link swipe top="exit" to="/method">
             Method
-          </AniLink>
-        </li>
+          </Link>
+        </li>*/}
         <li className="nav--item h3">
-          <AniLink fade to="/services">
-            Services
-          </AniLink>
-        </li>
+          <Link swipe top="entry" to="/playground">
+            Playground
+          </Link>
+        </li> 
       </div>
     </ul>
     <MarkLight className="nav--mark" />
@@ -53,14 +53,14 @@ const PrimaryNav = () => {
   return (
     <nav className="nav">
       <div className="mark">
-        <AniLink fade to="/">
+        <Link swipe top="exit" to="/">
           <Mark />
-        </AniLink>
+        </Link>
       </div>
       {width > 800 ? (
-        <AniLink fade to="/">
+        <Link swipe  top="exit" to="/">
           <div className="nav--header h4">Dev.LucasZapico</div>
-        </AniLink>
+        </Link>
       ) : undefined}
       <>
         <div className="sidenav--toggle">
