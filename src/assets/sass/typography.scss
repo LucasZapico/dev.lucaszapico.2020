@@ -199,9 +199,6 @@ blockquote {
 	.char-50 {
 		max-width: 320px;
   }
-  .char__readable {
-    max-width: 520px;
-  }
   @include char__readable(520px);
 }
 
