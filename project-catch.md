@@ -18,4 +18,4 @@
 
 - [ ] Enabling webpack, babel, and sass for Chrome extension development 
 - [ ] MDX gatcha gatsby 
-
+- [ ] responsive troubleshooting with ngrok 
