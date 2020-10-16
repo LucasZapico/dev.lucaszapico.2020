@@ -1,6 +1,7 @@
 
 .page {
     padding-top: 200px;
+    background-color: $color-pri-1;
 }
 
 .page.projects {
@@ -23,7 +24,9 @@
         blockquote,
         code,
         strong,
-        em {
+        em,
+        .measure__default {
+            
             @include char__readable(520px);
             margin: auto;
         }
@@ -48,7 +51,7 @@
         blockquote,
         code,
         strong,
-        em {
+        em, .measure__default {
             @include char__readable(750px);
             margin: auto;
         }

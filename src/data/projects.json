@@ -15,11 +15,9 @@
         "audio": "/audio/markie-II.mp3",
         "content": {
             "summary": {
-                "objective": "",
                 "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "outcome": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
                 "overview": "",
@@ -49,11 +47,9 @@
         "audio": "",
         "content": {
             "summary": {
-                "objective": "",
                 "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "outcome": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
                 "overview": "",
@@ -83,11 +79,9 @@
         "audio": "/audio/pretty-password-I.mp3",
         "content": {
             "summary": {
-                "objective": "",
-                "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "challenge": "Create a simple secure password generator for Chrome ",
+                "outcome": "Designed a pretty password generator Chrome extension and product site.",
+                "deliverables": ["development","design direction", "web design"]
             },
             "main": {
                 "overview": "",
@@ -117,11 +111,9 @@
         "audio": "/audio/markie-II.mp3",
         "content": {
             "summary": {
-                "objective": "",
                 "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "outcome": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
                 "overview": "",
@@ -151,17 +143,15 @@
         "content": {
             "audio": "",
             "summary": {
-                "objective": "",
-                "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "challenge": "Create a brand, web experience and initial business lead funnel with automated email campaign. ",
+                "outcome": "Design of a unique boutique agency site with clear experience defining services and funnel to lead capture. ",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
-                "overview": "",
-                "objective": "",
+                "overview": "Northern Wind & Southern Sun is an agency website focused on creating cohesive brand and digital experiences.",
+                "objective": "Build a web experience that fosters value and a clear understanding of the type and feel of the work that Northern Wind & Southern Sun produces. The goal was to be opinionated and clean as a method of passive prequalifying potential leads.",
                 "features": "",
-                "challenge": "",
+                "challenge": "Design a brand identity, color, typography and mark that positioned itself at the desired market. Leading to lead generation in the form of email capture.",
                 "solution": "",
                 "result": "",
                 "deliverables": "",
@@ -186,11 +176,9 @@
         "content": {
             "audio": "",
             "summary": {
-                "objective": "",
                 "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ""
+                "outcome": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
                 "overview": "",
