@@ -54,10 +54,8 @@ exports.createPages = async ({
               }
               summary {
                 challenge
+                outcome
                 deliverables
-                objective
-                result
-                solution
               }
             }
             tags

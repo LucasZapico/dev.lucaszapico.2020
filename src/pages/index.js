@@ -157,10 +157,8 @@ export const pageQuery = graphql`
             }
             summary {
               challenge
+              outcome
               deliverables
-              objective
-              result
-              solution
             }
           }
           tags
