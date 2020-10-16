@@ -1,17 +1,12 @@
-import React, { useState, useRef, useEffect, useLayoutEffect } from "react"
+import React, { useState, useRef } from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
-import Angle from "../assets/images/angle-line.svg"
-import TransitionLink from "gatsby-plugin-transition-link"
 import Link from "gatsby-plugin-transition-link/AniLink"
-import { useScrollPosition } from "../hook//index"
-import { Tween, Timeline } from "react-gsap"
-import { Controller, Scene } from "react-scrollmagic"
 import { IoIosArrowRoundForward } from "react-icons/io"
-import { set } from "lodash"
+
+
 
 const ProjectSection = ({ projectData, progress }) => (
   <div className="project">
@@ -22,14 +17,14 @@ const ProjectSection = ({ projectData, progress }) => (
         data-sal-delay="100"
         data-sal-easing="ease"
       >
-        <h3 className="project__title">{projectData.frontmatter.title}</h3>
+        <h3 className="project__title">{projectData.title}</h3>
 
         <h6 className="char-100 project__subheader">
-          {projectData.frontmatter.subheader}
+          {projectData.subheader}
           {progress}
         </h6>
         <div className="project__tags ">
-          {projectData.frontmatter.tags.map((t, i) => (
+          {projectData.tags.map((t, i) => (
             <div key={i} className="project__tag body__default">
               {t},
             </div>
@@ -44,14 +39,15 @@ const ProjectSection = ({ projectData, progress }) => (
         data-sal-easing="ease"
       >
         <div className="project__img">
-          <Img fluid={projectData.frontmatter.featured.childImageSharp.fluid} objectFit="contain" />
+          
+        <Img fluid={projectData.featured.src.childImageSharp.fluid} objectFit="contain" />
         </div>
       </div>
 
       <Link
         swipe
         top="exit"
-        to={projectData.frontmatter.path}
+        to={projectData.path}
         className="icon__arrow link__primary--dark"
       >
         More On The project{""} <IoIosArrowRoundForward />
@@ -62,12 +58,13 @@ const ProjectSection = ({ projectData, progress }) => (
 
 const IndexPage = ({ data }) => {
   const edges = data.recentProjects.edges
+  console.log(edges)
   const lineContainer = useRef(null)
   const [currentYPos, setCurrentYPos] = useState(0)
 
   const [plSt, setPlSt] = useState("show")
   // hero verb changer
-
+  
   return (
     <Layout>
       <SEO title="Home" />
@@ -82,11 +79,11 @@ const IndexPage = ({ data }) => {
             <div className="hero__content content__container margin__left--m">
               <h2 className="">Frontend Developer who&nbsp;Designs</h2>
 
-              <div>
+              {/* <div>
                 <Link swipe top="exit" to="/method" className="link__primary--light icon__arrow">
                   Method <IoIosArrowRoundForward />
                 </Link>
-              </div>
+              </div> */}
               {/* <div className="hero-img__container">
                 <div className="hero__img" ref={lineContainer}>
                   <Angle />
@@ -130,33 +127,55 @@ export const pageQuery = graphql`
         }
       }
     }
-    recentProjects: allMarkdownRemark(
-      limit: 6
-      filter: {
-        frontmatter: { categories: { eq: "case" }, isdraft: { eq: false } }
-      }
-      sort: { fields: frontmatter___date_created, order: DESC }
-    ) {
+    recentProjects: allProjectsJson(sort: {order: DESC, fields: data_created}) {
       edges {
         node {
           id
-          frontmatter {
-            last_modified
-            title
-            subheader
-            path
-            isdraft
-            date_created
-            categories
-            tags
-            featured {
+          featured {
+            src {
               childImageSharp {
-                fluid(maxWidth:400) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
           }
+          audio
+          categories
+          data_created
+          path
+          content {
+            main {
+              challenge
+              deliverables
+              features
+              objective
+              overview
+              result
+              solution
+              takeaways
+            }
+            summary {
+              challenge
+              deliverables
+              objective
+              result
+              solution
+            }
+          }
+          tags
+          technology_stack
+          title
+          subheader
+          isComingSoon
+          isdraft
+          last_modified
+        }
+        next {
+          title
+        }
+        previous {
+          title
         }
       }
     }

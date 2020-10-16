@@ -1,0 +1,208 @@
+[{
+        "title": "Green Star News",
+        "path": "/projects/green-star-news",
+        "subheader": "Green Star News is Gatsby news platform demo",
+        "data-created": "09/10/2020",
+        "last-modified": "09/13/2020",
+        "categories": ["prject", "demo"],
+        "tags": ["gatsby", "react", "user-experience", "development", "ui-design"],
+        "featured": {
+            "src" :"../assets/images/projects/featured/green-star-news-showcase.png"
+        } ,
+        "isdraft": false,
+        "isComingSoon": true,
+        "technology-stack": ["figma", "codepen", "gastby"],
+        "audio": "/audio/markie-II.mp3",
+        "content": {
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    },
+    {
+        "title": "Modalero Shop",
+        "path": "projects/modalero-shop",
+        "subheader": "A boutique shopping experience Reach Shopify experience",
+        "data-created": "09/10/2020",
+        "last-modified": "09/15/2020",
+        "categories": ["prject"],
+        "tags": ["web-app", "shopify", "react", "user-experience", "development", "ui-design"],
+        "featured": {"src":"../assets/images/projects/featured/modalero-shop.png"},
+        "isdraft": false,
+        "isComingSoon": false,
+        "technology-stack": [],
+        "audio": "",
+        "content": {
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    },
+    {
+        "title": "Pretty Password",
+        "path": "/projects/pretty-password",
+        "subheader": "Pretty Password is a chrome extension to quickly generate secure passwords",
+        "data-created": "10/1/2020",
+        "last-modified": "10/4/2020",
+        "categories": ["project", "chrome-extension"],
+        "tags": ["chrome", "gatsby", "react", "user-experience", "development", "ui-design"],
+        "featured": {"src":"../assets/images/projects/featured/pretty-password.png"},
+        "isdraft": false,
+        "isComingSoon": false,
+        "technology-stack": ["figma", "webpack", "javascript", "codepen", "gastby"],
+        "audio": "/audio/pretty-password-I.mp3",
+        "content": {
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    },
+    {
+        "title": "Mark'ie",
+        "path": "/projects/mark-ie",
+        "subheader": "Mark'ie is an opinionated markdown journal prototype",
+        "data-created": "05/23/2020",
+        "last-modified": "07/03/2020",
+        "categories": ["project", "web-app"],
+        "tags": ["react", "user-experience", "development", "ui-design"],
+        "featured": {"src":"../assets/images/projects/featured/markie.png"},
+        "isdraft": false,
+        "isComingSoon": false,
+        "technology-stack": ["figma", "react-hooks", "context-api", "firebase"],
+        "audio": "/audio/markie-II.mp3",
+        "content": {
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    }, {
+        "title": "Northern Wind & Southern Sun",
+        "path": "/projects/northern-wind-southern-sun",
+        "subheader": "Northern Wind & Souther Sun is our beautiful shop site",
+        "data-created": "05/23/2020",
+        "last-modified": "06/30/2020",
+        "categories": ["project", "web-site"],
+        "tags": ["gatsby", "user-experience", "development", "ui-design"],
+        "featured": {"src":"../assets/images/projects/featured/nothernwind-showcase.png"},
+        "isdraft": false,
+        "isComingSoon": false,
+        "technology-stack": ["figma", "gatsby"],
+        "audio": "/static/audio/markie-II.mp3",
+        "content": {
+            "audio": "",
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    },
+    {
+        "title": "Yoga Of Words",
+        "path": "/projects/yoga-of-words",
+        "subheader": "Yoga of Words is an uplifting poetry and prose experience",
+        "data-created": "05/22/2020",
+        "last-modified": "06/15/2020",
+        "categories": ["project", "web-site"],
+        "tags": ["gatsby", "user-experience", "development", "ui-design"],
+        "featured": {"src": "../assets/images/projects/featured/yoga-of-word-showcase.png"},
+        "isdraft": false,
+        "isComingSoon": false,
+        "technology-stack": ["figma", "gatsby"],
+        "audio": "/static/audio/yoga-of-words-I.mp3",
+        "content": {
+            "audio": "",
+            "summary": {
+                "objective": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": ""
+            },
+            "main": {
+                "overview": "",
+                "objective": "",
+                "features": "",
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": "",
+                "takeaways": ""
+            },
+            "role": "developer"
+        }
+    }
+]
