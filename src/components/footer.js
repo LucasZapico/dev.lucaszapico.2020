@@ -71,7 +71,7 @@ const Footer = () => {
           {/* © 2020, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> */}
           <div>
             {/*  */}
-            Last-Modified: 06/25/2020
+            Last-Modified: 2020/10/15
             {/*  */}
           </div>
         </div>
