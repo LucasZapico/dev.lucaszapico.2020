@@ -12,13 +12,14 @@ module.exports = {
         trackingId: "UA-118288221-4",
       },
     },
+    "gatsby-plugin-catch-links",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-transition-link",
     "gatsby-plugin-lodash",
+    "gatsby-transformer-sharp", 
+    "gatsby-plugin-sharp",
     {
       resolve: "@gatsby-contrib/gatsby-plugin-elasticlunr-search",
       options: {
@@ -83,23 +84,18 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "cases",
-        path: `${__dirname}/src/pages/cases`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         path: `${__dirname}/src/assets/images`,
       },
     },
 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        plugins: [`gatsby-transformer-json`],
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -114,36 +110,23 @@ module.exports = {
         name: "pages",
         path: `${__dirname}/src/pages`,
       },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: ["gatsby-remark-smartypants"],
-      },
-    },
-    // {
-    //   resolve: "gatsby-plugin-page-creator",
-    //   options: {
-    //     path: `${__dirname}/src/cases`,
-    //   },
-    // },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: ["gatsby-remark-copy-linked-files"],
-      },
-    },
+    },   
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          "gatsby-remark-smartypants",
+          "gatsby-remark-copy-linked-files",
+          {
+            resolve: "gatsby-remark-audio",
+            options: {
+              preload: "auto",
+              loop: false,
+              controls: true,
+              muted: false,
+              autoplay: false,
+            },
+          },
           {
             resolve: "gatsby-remark-prismjs",
             options: {
@@ -212,8 +195,5 @@ module.exports = {
         ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

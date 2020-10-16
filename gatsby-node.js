@@ -8,6 +8,7 @@
 
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+// const projects = require('./src/data/projects.json')
 
 // Log out information after a build is done
 exports.onPostBuild = ({ reporter }) => {
@@ -26,66 +27,134 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-
-  const Template = path.resolve(`src/templates/default.js`)
-
+// Promise API
+exports.createPages = async ({
+  actions: { createPage },
+  reporter,
+  graphql,
+}) => {
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        filter: { frontmatter: { isdraft: { eq: false } } }
-        sort: { order: DESC, fields: [frontmatter___date_created] }
-        limit: 1000
-      ) {
+      allProjectsJson {
         edges {
-            node {
-              id
-              frontmatter {
-                categories
-                path
-                title
-                tags
-                subheader
-                isdraft
+          node {
+            audio
+            categories
+            data_created
+            content {
+              main {
+                challenge
+                deliverables
+                features
+                objective
+                overview
+                result
+                solution
+                takeaways
               }
-              html
-              headings {
-                depth
-                value
-              }
-            }
-            previous {
-              frontmatter {
-                title
-                path
-              }
-            }
-            next {
-              frontmatter {
-                path
-                title
+              summary {
+                challenge
+                deliverables
+                objective
+                result
+                solution
               }
             }
+            tags
+            technology_stack
+            title
+            subheader
+            isComingSoon
+            isdraft
+            last_modified
+            
           }
+          next {
+            title
+          }
+          previous {
+            title
+          }
+        }
       }
     }
   `)
 
-  // Handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  const posts = result.data.allMarkdownRemark.edges
+  const projects = result.data.allProjectsJson.edges
 
-  posts.forEach(({ node }, index) => {
+  projects.forEach((project, index) => {
+    let slug = project.node.title
+    console.log("title", slug)
+    slug = slug.replace(/[^a-z0-9+]+/gi, "-").toLowerCase()
+    console.log(slug)
     createPage({
-      path: node.frontmatter.path,
-      component: Template,
-      context: {
-
-      }, // additional data can be passed via context
+      path: `/projects/${slug}/`,
+      component: require.resolve("./src/templates/projectTemplate.js"),
+      context: { project },
     })
   })
 }
+
+// exports.createPages = async ({ actions, graphql, reporter }) => {
+//   const { createPage } = actions
+
+//   const Template = path.resolve(`src/templates/default.js`)
+
+//   const result = await graphql(`
+//     {
+//       allMarkdownRemark(
+//         filter: { frontmatter: { isdraft: { eq: false } } }
+//         sort: { order: DESC, fields: [frontmatter___date_created] }
+//         limit: 1000
+//       ) {
+//         edges {
+//             node {
+//               id
+//               frontmatter {
+//                 categories
+//                 path
+//                 title
+//                 tags
+//                 subheader
+//                 isdraft
+//               }
+//               html
+//               headings {
+//                 depth
+//                 value
+//               }
+//             }
+//             previous {
+//               frontmatter {
+//                 title
+//                 path
+//               }
+//             }
+//             next {
+//               frontmatter {
+//                 path
+//                 title
+//               }
+//             }
+//           }
+//       }
+//     }
+//   `)
+
+//   // Handle errors
+//   if (result.errors) {
+//     reporter.panicOnBuild(`Error while running GraphQL query.`)
+//     return
+//   }
+//   const posts = result.data.allMarkdownRemark.edges
+
+//   posts.forEach(({ node }, index) => {
+//     createPage({
+//       path: node.frontmatter.path,
+//       component: Template,
+//       context: {
+
+//       }, // additional data can be passed via context
+//     })
+//   })
+// }
