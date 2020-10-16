@@ -12,12 +12,12 @@ const PrimaryMenu = ({ width }) => (
     <ul className="nav--items">
       <div>
         <li className="nav--item h3">
-          <Link swipe top="exit" to="/">
+          <Link swipe top="entry" to="/">
             Home
           </Link>
         </li>
         <li className="nav--item h3">
-          <Link swipe top="exit" to="/about">
+          <Link swipe top="entry" to="/about">
             About
           </Link>
         </li>
