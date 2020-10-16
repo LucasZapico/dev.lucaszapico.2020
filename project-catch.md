@@ -10,7 +10,7 @@
  - featured codepens 
  - design ui's 
 - [ ] about this project 
-
+- [ ] [add cool cursor](https://dev.to/andrewchmr/awesome-animated-cursor-with-react-hooks-5ec3) [react-animated-curso](https://www.npmjs.com/package/react-animated-cursor)
 
 ## Ideas and Features
 
