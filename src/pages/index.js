@@ -46,7 +46,7 @@ const ProjectSection = ({ projectData, progress }) => (
 
       <Link
         swipe
-        top="exit"
+        direction="right"
         to={projectData.path}
         className="icon__arrow link__primary--dark"
       >

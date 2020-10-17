@@ -69,9 +69,11 @@ exports.createPages = async ({
           }
           next {
             title
+            path
           }
           previous {
             title
+            path
           }
         }
       }
@@ -82,9 +84,7 @@ exports.createPages = async ({
 
   projects.forEach((project, index) => {
     let slug = project.node.title
-    console.log("title", slug)
     slug = slug.replace(/[^a-z0-9+]+/gi, "-").toLowerCase()
-    console.log(slug)
     createPage({
       path: `/projects/${slug}/`,
       component: require.resolve("./src/templates/projectTemplate.js"),

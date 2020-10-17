@@ -1,9 +1,9 @@
 [{
         "title": "Green Star News",
-        "path": "/projects/green-star-news",
+        "path": "/projects/green-star-news/",
         "subheader": "Green Star News is Gatsby news platform demo",
-        "data-created": "09/10/2020",
-        "last-modified": "09/13/2020",
+        "data-created": "10/10/2020",
+        "last-modified": "10/13/2020",
         "categories": ["prject", "demo"],
         "tags": ["gatsby", "react", "user-experience", "development", "ui-design"],
         "featured": {
@@ -11,7 +11,7 @@
         } ,
         "isdraft": false,
         "isComingSoon": true,
-        "technology-stack": ["figma", "codepen", "gastby"],
+        "technology-stack": ["figma", "codepen", "gastby","github"],
         "audio": "/audio/markie-II.mp3",
         "content": {
             "summary": {
@@ -43,7 +43,7 @@
         "featured": {"src":"../assets/images/projects/featured/modalero-shop.png"},
         "isdraft": false,
         "isComingSoon": false,
-        "technology-stack": [],
+        "technology-stack": ["figma", "codesandbox", "react-hooks", "github"],
         "audio": "",
         "content": {
             "summary": {
@@ -66,7 +66,7 @@
     },
     {
         "title": "Pretty Password",
-        "path": "/projects/pretty-password",
+        "path": "/projects/pretty-password/",
         "subheader": "Pretty Password is a chrome extension to quickly generate secure passwords",
         "data-created": "10/1/2020",
         "last-modified": "10/4/2020",
@@ -129,7 +129,7 @@
         }
     }, {
         "title": "Northern Wind & Southern Sun",
-        "path": "/projects/northern-wind-southern-sun",
+        "path": "/projects/northern-wind-southern-sun/",
         "subheader": "Northern Wind & Souther Sun is our beautiful shop site",
         "data-created": "05/23/2020",
         "last-modified": "06/30/2020",
@@ -162,7 +162,7 @@
     },
     {
         "title": "Yoga Of Words",
-        "path": "/projects/yoga-of-words",
+        "path": "/projects/yoga-of-words/",
         "subheader": "Yoga of Words is an uplifting poetry and prose experience",
         "data-created": "05/22/2020",
         "last-modified": "06/15/2020",
