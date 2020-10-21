@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+
 
 import "../assets/sass/_style.scss"
 
@@ -26,15 +26,8 @@ const LayoutLite = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container">{children}</div>
-      <script
-        type="text/javascript"
-        id="hs-script-loader"
-        async
-        defer
-        src="//js.hs-scripts.com/7973859.js"
-      ></script>
+      {/* add script tags that need to be at the bottom of body */}
     </>
   )
 }

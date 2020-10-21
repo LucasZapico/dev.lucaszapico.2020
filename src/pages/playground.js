@@ -1,11 +1,11 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Link from "gatsby-plugin-transition-link/AniLink"
+import { graphql, Link } from "gatsby"
+// import Link from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 
-const PlaygroundPage = ({ data }) => (
+const PlaygroundPage = () => (
   <Layout>
     <SEO title="playground" />
     <div className="page content--container">
@@ -30,28 +30,8 @@ const PlaygroundPage = ({ data }) => (
 
 export default PlaygroundPage
 
-export const pageQuery = graphql`
-  query {
-    teamOneImg: file(relativePath: { eq: "team/ardian.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500, maxHeight: 500, grayscale: true) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    teamTwoImg: file(relativePath: { eq: "team/lucas-crop.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500, maxHeight: 500, grayscale: true) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    teamThreeImg: file(relativePath: { eq: "team/alex-bush.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 500, maxHeight: 500, grayscale: true) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+ 
+//   }
+// `

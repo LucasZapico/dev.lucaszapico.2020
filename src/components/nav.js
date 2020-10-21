@@ -1,95 +1,86 @@
 import React, { useState } from "react"
 import Mark from "../assets/images/mark.svg"
 import MarkLight from "../assets/images/mark-light.svg"
-import TransitionLink from "gatsby-plugin-transition-link"
-import Link from "gatsby-plugin-transition-link/AniLink"
 import { IoIosMenu, IoIosClose } from "react-icons/io"
-import { Tween, Timeline, PlayState, Controls } from "react-gsap"
-import { useCurrentWidth } from "../hook"
+import { Link } from "gatsby"
 
-const PrimaryMenu = ({ width }) => (
-  <div>
-    <ul className="nav--items">
+const PrimaryMenu = () => (
+  <div className="pri-menu">
+    <ul className="pri-menu__items">
       <div>
-        <li className="nav--item h3">
-          <Link swipe top="exit" to="/">
-            Home
-          </Link>
+        <li className="pri-menu__item h3">
+          <Link to="/">Home</Link>
         </li>
-        <li className="nav--item h3">
-          <Link swipe top="exit" to="/about">
-            About
-          </Link>
+        <li className="pri-menu__item h3">
+          <Link to="/about">About</Link>
         </li>
       </div>
       <div>
         {/* <li className="nav--item h3">
-          <Link swipe to="/all-cases">
-            Cases
-          </Link>
-        </li> */}
+            <Link swipe to="/all-cases">
+              Cases
+            </Link>
+          </li> */}
 
         {/* <li className="nav--item h3">
-          <Link swipe top="exit" to="/method">
-            Method
-          </Link>
-        </li>*/}
-        <li className="nav--item h3">
-          <Link swipe top="entry" to="/playground">
-            Playground
-          </Link>
-        </li> 
+            <Link  to="/method">
+              Method
+            </Link>
+          </li>*/}
+        <li className="pri-menu__item h3">
+          <Link to="/playground">Playground</Link>
+        </li>
       </div>
     </ul>
-    <MarkLight className="nav--mark" />
+    <MarkLight className="pri-menu__mark" />
   </div>
 )
 
 const PrimaryNav = () => {
-  const width = useCurrentWidth()
+  //   const width = useCurrentWidth()
+  const width = 900
   const [showMenu, setShowMenu] = useState(false)
   const [playSt, setPlaySt] = useState("stop")
 
   return (
-    <nav className="nav">
-      <div className="mark">
-        <Link swipe top="exit" to="/">
-          <Mark />
-        </Link>
-      </div>
-      {width > 800 ? (
-        <Link swipe  top="exit" to="/">
-          <div className="nav--header h4">Dev.LucasZapico</div>
-        </Link>
-      ) : undefined}
       <>
-        <div className="sidenav--toggle">
-          {!showMenu ? (
-            <IoIosMenu
-              onClick={() => {
-                setShowMenu(!showMenu)
-                setPlaySt("play")
-              }}
-            />
-          ) : (
-            <IoIosClose
-              onClick={() => {
-                setShowMenu(!showMenu)
-                setPlaySt("reverse")
-              }}
-            />
-          )}
+    <div className="nav__container">
+      <nav className="nav ">
+        <div className="mark">
+          <Link to="/">
+            <Mark />
+          </Link>
         </div>
-
-        <Timeline paused={true} playState={playSt}>
-          <Tween from={{ height: "0%" }} to={{ height: "70%" }}>
-            <div className="sidenav--primary">
-              <PrimaryMenu width={width} />
-            </div>
-          </Tween>
-        </Timeline>
-      </>
-    </nav>
+        {width > 800 ? (
+          <Link to="/">
+            <div className="nav__header h4">Dev.LucasZapico</div>
+          </Link>
+        ) : undefined}
+        <>
+          <div className="sidenav__toggle">
+            {!showMenu ? (
+              <IoIosMenu
+                onClick={() => {
+                  setShowMenu(!showMenu)
+                }}
+              />
+            ) : (
+              <IoIosClose
+                onClick={() => {
+                  setShowMenu(!showMenu)
+                }}
+              />
+            )}
+          </div>
+        </>
+      </nav>
+      </div>
+      {showMenu ? (
+        <div className="sidenav__primary">
+          <PrimaryMenu width={width} />
+        </div>
+      ) : undefined}
+    </>
   )
 }
 

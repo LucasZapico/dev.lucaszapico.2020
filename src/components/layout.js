@@ -11,15 +11,16 @@ import { useStaticQuery, graphql } from "gatsby"
 import LayoutLite from "./layout-lite"
 
 import Footer from "./footer"
-import "../assets/sass/_style.scss"
+import Nav from "./nav"
 
 const Layout = ({ children }) => {
   return (
     <LayoutLite>
-      <div>
-        {children}
-        <Footer />
-      </div>
+      <Nav />
+      <main className="main">
+      {children}
+      </main>
+      <Footer />
     </LayoutLite>
   )
 }

@@ -1,13 +1,6 @@
 
 /***
 **
-** MEDIA QUERIES & BREAKPOINTS
-** 
-**
-***/
-
-/***
-**
 ** BreakPoints 
 **
 **
@@ -29,10 +22,10 @@ $media-xlarge: 1400px;
 /***
 ** Core Colors
 ***/
-$color-pri-1: #f2f9f9;
-$color-pri-2:   #5E8782;
-$color-pri-3: #466257;
-$color-sec-1: #FFF1E3;
+$color-pri : #f9f6f2;
+$color-sec : #221a1a;
+$color-tri : #466257;
+$color-quad: #FFF1E3;
 // $color-sec-2: 
 
 /***
@@ -50,34 +43,21 @@ $color-grey-7: #38383A;
 $color-grey-8: #1D1D1E;
 $color-dark : #0A0A0A;
 
-// old
-$color-a: #1f5279;
-$color-pri-1: #f9f6f2;
-$color-d: #f9f6f2;
-$color-e: #f9f6f2;
+/***
+** Typography Colors 
+***/
 
-$color-f: #221a1a;
-$color-g: #f9f6f2;
-$color-h: #ebe1e1;
-// $color-h: #ebe1e174;
-
-$primary-type-color: $color-grey-6;
-// $secondary-type-color:
-
-// Light theme
-$bg-primary: $color-pri-1;
-$bg-secondary: $color-grey-8;
-
-$primary-type-color: $color-grey-8;
-$secondary-type-color: $color-grey-7;
-
+$pri-type-color: $color-grey-8;
+$sec-type-color: $color-grey-7;
 
 /***
-**
-** COLOR
-**
-**
+** Background Colors 
 ***/
+
+// Light theme
+$bg-pri: $color-pri;
+$bg-sec: $color-grey-8;
+
 
 /***
 **
@@ -87,21 +67,18 @@ $secondary-type-color: $color-grey-7;
 ***/
 // Display 
 // headers
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Condensed&display=swap');
-// script
 
-// body 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800;1&display=swap');
 
 $type-base-size: 18px;
 
 // body variables 
-$base-family     : 'IBM Plex Sans Condensed', sans-serif;
+$base-family     : 'Montserrat', sans-serif;
 $base-line-height: 1.3;
 $base-weight     : 500;
 
 // header variables 
-$header-family     : 'IBM Plex Mono', monospace;
+$header-family     : 'Montserrat', sans-serif;
 $header-base-size  : $type-base-size;
 $header-line-height: $base-line-height;
 $header-weight     : 400;

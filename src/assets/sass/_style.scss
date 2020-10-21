@@ -1,18 +1,19 @@
-@import "./base.scss";
+@import "./base";
 @import "./variables";
-@import "./layout-base";
 @import "./typography";
 @import "./utilities";
-@import "./buttons-links.scss";
-// components
+@import "./layout";
+//-------------------//
+@import "./button-links-cta";
+
+//----Components------//
 @import "./components/footer";
 @import "./components/nav";
-@import "./components/form";
-//Pages
-@import "./pages/pages";
+
+//----Pages------//
+@import "./pages/style-guide";
 @import "./pages/home";
-@import "./pages/method";
-@import "./pages/services";
+@import "./pages/projects";
 
 #l-mark {
 	animation: 8s linear infinite orbit;
