@@ -12,12 +12,12 @@ const PrimaryMenu = ({ width }) => (
     <ul className="nav--items">
       <div>
         <li className="nav--item h3">
-          <Link swipe top="exit" to="/">
+          <Link swipe direction="right" to="/">
             Home
           </Link>
         </li>
         <li className="nav--item h3">
-          <Link swipe top="exit" to="/about">
+          <Link swipe direction="right" to="/about">
             About
           </Link>
         </li>
@@ -30,12 +30,12 @@ const PrimaryMenu = ({ width }) => (
         </li> */}
 
         {/* <li className="nav--item h3">
-          <Link swipe top="exit" to="/method">
+          <Link swipe direction="right" to="/method">
             Method
           </Link>
         </li>*/}
         <li className="nav--item h3">
-          <Link swipe top="entry" to="/playground">
+          <Link swipe direction="right" to="/playground">
             Playground
           </Link>
         </li> 
@@ -53,12 +53,12 @@ const PrimaryNav = () => {
   return (
     <nav className="nav">
       <div className="mark">
-        <Link swipe top="exit" to="/">
+        <Link swipe direction="right" to="/">
           <Mark />
         </Link>
       </div>
       {width > 800 ? (
-        <Link swipe  top="exit" to="/">
+        <Link swipe  direction="right" to="/">
           <div className="nav--header h4">Dev.LucasZapico</div>
         </Link>
       ) : undefined}

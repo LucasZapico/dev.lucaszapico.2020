@@ -2,7 +2,7 @@
 title: "Mark'ie"
 subheader: "Mark'ie is an opinionated markdown journal prototype "
 date-created: "05/23/2020"
-last-modified: "07/03/2020"
+last-modified: 2020/10/15
 categories: ["case"]
 tags: ["web-app", "illustration", "user-experience", "development"]
 path: "/cases/markie-case/"
