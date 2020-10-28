@@ -101,6 +101,10 @@ const StyleGuidePage = () => {
             </div>
           </section>
           <section className="section">
+            <h3 className="h4">Butotns And Links</h3>
+            <button className=""></button>
+          </section>
+          <section className="section">
             <h3 className="h4">Card</h3>
             <div className="card"></div>
           </section>

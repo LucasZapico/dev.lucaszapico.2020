@@ -130,25 +130,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               path
             }
             frontmatter {
-              title, 
-              "headings": [
-                {
-                  "depth": 2,
-                  "value": "Story"
-                },
-                {
-                  "depth": 2,
-                  "value": "Prerequisites"
-                },
-                {
-                  "depth": 2,
-                  "value": "Set up"
-                },
-                {
-                  "depth": 2,
-                  "value": "Create Pages on Build"
-                }
-              ]
+              title
+            }
+            headings(depth: h2) {
+              depth
+              value
             }
           }
         }
