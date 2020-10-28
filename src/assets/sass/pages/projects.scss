@@ -1,12 +1,22 @@
-
 .page {
     background-color: $color-pri;
+
+    .measure__default {
+        padding: $space-atom * $md;
+        background-color: #e9e5e0;
+    }
 }
 
 .page.projects {
+    .projects.measure__default {
+        padding: $space-atom * $md;
+        background-color: #e9e5e0;
+    }
+
     $type-scaler: 1.2;
-	$header-base-size: $type-base-size; 
-	@include typeScales($header-base-size, $type-scaler);
+    $header-base-size: $type-base-size;
+    @include typeScales($header-base-size, $type-scaler);
+
     // 100px and up 
     @media screen and (min-width: 100px) {
 
@@ -25,7 +35,7 @@
         strong,
         em,
         .measure__default {
-            
+
             @include char__readable(520px);
             margin: auto;
         }
@@ -50,15 +60,14 @@
         blockquote,
         code,
         strong,
-        em, .measure__default {
+        em,
+        .measure__default {
             @include char__readable(750px);
             margin: auto;
         }
     }
 
-    @media screen and (min-width: $media-large) {
-        
-    }
+    @media screen and (min-width: $media-large) {}
 
     @media screen and (min-width: $media-xlarge) {}
 }

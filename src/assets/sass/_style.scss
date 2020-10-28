@@ -5,6 +5,7 @@
 @import "./layout";
 //-------------------//
 @import "./button-links-cta";
+@import "./code";
 
 //----Components------//
 @import "./components/footer";
@@ -14,13 +15,16 @@
 @import "./pages/style-guide";
 @import "./pages/home";
 @import "./pages/projects";
+@import "./pages/articles";
 
 #l-mark {
 	animation: 8s linear infinite orbit;
 }
+
 #l-mark--light {
 	animation: 8s linear infinite reverse orbit;
 }
+
 #inner {
 	animation: 8s linear infinite scale;
 }
@@ -29,6 +33,7 @@
 	from {
 		transform: rotate(0);
 	}
+
 	to {
 		transform: rotate(360deg);
 	}
@@ -38,12 +43,15 @@
 	from {
 		transform: scale(1);
 	}
+
 	25% {
 		transform: scale(0.9);
 	}
+
 	50% {
 		transform: scale(0.8);
 	}
+
 	75% {
 		transform: scale(0.9);
 	}

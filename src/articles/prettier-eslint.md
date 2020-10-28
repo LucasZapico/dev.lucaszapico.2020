@@ -1,81 +1,79 @@
 ---
-title: "Eslint and Prettier General Config"
-description: "My 2020 configuration of Prettier and Eslint"
+title: 'Eslint and Prettier General Config'
+description: 'My 2020 configuration of Prettier and Eslint'
 date-created: 2020/10/21
-last-modified: 2020/10/21
-isdraft: true
-categories: ["dev-env", "notes"]
-tags: ["prettier", "eslint"]
+last-modified: '2020/10/27'
+isdraft: false
+categories: ['dev-env', 'notes']
+tags: ['prettier', 'eslint']
 type: 'post'
 ---
 
-
 ## Machine
 
-```shell 
-brew install eslint 
+```shell
+brew install eslint
 ```
 
-```shell 
+```shell
 brew install prettier
 ```
 
 ## Project
 
-```shell 
+```shell
 touch .prettierrc
 ```
 
-```shell 
+```shell
 eslint init
 ```
 
-### Prettier Example 
+### Prettier Example
 
-*.prettierrc*
+_.prettierrc_
+
 ```json
-// .prettierrc 
+// .prettierrc
 {
   "arrowParens": "avoid",
   "semi": false,
-  "singleQuote": true, 
+  "singleQuote": true,
   "printWidth": 70
 }
 ```
 
-### Eslint Example 
+### Eslint Example
 
-*.eslint.json*
+_.eslint.json_
+
 ```json
-// .eslint.json 
+// .eslint.json
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "prettier",
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "prettier",
-        "react"
-    ],
-    "rules": {
-        "prettier/prettier": ["error"]
-      }
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  }
 }
 ```
 
-## References 
+## References
 
 [Prettier & Eslint - Rw;eruch](https://www.robinwieruch.de/prettier-eslint)
 [Prettier Eslint in VSCode - Rw;eruch](https://www.robinwieruch.de/how-to-use-prettier-vscode)

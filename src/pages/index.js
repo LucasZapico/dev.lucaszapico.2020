@@ -1,88 +1,103 @@
-import React from "react"
-import Layout from "../components/layout"
-import Img from "gatsby-image"
-import {Link, graphql} from 'gatsby'
-import { IoIosArrowRoundForward } from "react-icons/io"
-import SEO from "../components/seo"
+import React from 'react'
+import Layout from '../components/layout'
+import Img from 'gatsby-image'
+import { Link, graphql } from 'gatsby'
+import { IoIosArrowRoundForward } from 'react-icons/io'
+import SEO from '../components/seo'
 
 const ProjectSection = ({ projectData, progress }) => {
   console.log(projectData.title, projectData.featured.src)
   return (
-  
-  <div className="project">
-    <div className="content__container">
-      <div
-        className="project__header char-100"
-        data-sal="slide-right"
-        data-sal-delay="100"
-        data-sal-easing="ease"
-      >
-        <h3 className="project__title">{projectData.title}</h3>
+    <div className="project">
+      <div className="content__container">
+        <div
+          className="project__header char-100"
+          data-sal="slide-right"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+        >
+          <h3 className="project__title">{projectData.title}</h3>
 
-        <h6 className="char-100 project__subheader">
-          {projectData.subheader}
-          {progress}
-        </h6>
-        <div className="project__tags ">
-          {projectData.tags.map((t, i) => (
-            <div key={i} className="project__tag body__default">
-              {t},
-            </div>
-          ))}
+          <h6 className="char-100 project__subheader">
+            {projectData.subheader}
+            {progress}
+          </h6>
+          <div className="project__tags ">
+            {projectData.tags.map((t, i) => (
+              <div key={i} className="project__tag body__default">
+                {t},
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div
-        className="project__shower"
-        data-sal="slide-right"
-        data-sal-delay="100"
-        data-sal-easing="ease"
-      >
-        <div className="project__img">
-
-        <Img fluid={projectData.featured.src.childImageSharp.fluid} objectFit="contain" />
+        <div
+          className="project__shower"
+          data-sal="slide-right"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+        >
+          <div className="project__img">
+            <Img
+              fluid={projectData.featured.src.childImageSharp.fluid}
+              objectFit="contain"
+            />
+          </div>
         </div>
-      </div>
 
-      <Link
-        swipe
-        direction="right"
-        to={projectData.path}
-        className="icon__arrow link__primary--dark"
-      >
-        More On The project{""} <IoIosArrowRoundForward />
-      </Link>
+        <Link
+          swipe
+          direction="right"
+          to={projectData.path}
+          className="icon__arrow link__primary--dark"
+        >
+          More On The project{''} <IoIosArrowRoundForward />
+        </Link>
+      </div>
     </div>
-  </div>
-)}
+  )
+}
 
-const HomePage = ({data}) => {
+const HomePage = ({ data }) => {
   const edges = data.recentProjects.edges
   return (
     <Layout>
-  <SEO title="home" />
+      <SEO title="home" />
       <div className="container home">
-        
-          <header className="home header">
+        <header className="home header">
           <div className="hero">
             <div className="hero__content content__container margin__left--m">
-              <h2 className="">Frontend Developer who&nbsp;Designs</h2>
+              <h2 className="">
+                Hello, I am Lucas thanks for stopping by.
+              </h2>
+              <h5>
+                Mostly a Frontend developer focusing on Reactjs.
+              </h5>
+              {/* <h6 className="body margin__top">
+                But I enjoy the gambit of challenges in building
+                products including branding, UI/UX decisions and
+                project management...I hope you feel the same after
+                taking a look around.
+              </h6> */}
             </div>
           </div>
-          </header>
-          <div className="content home">
+        </header>
+        <div className="content home">
           <section className="section projects">
-          <div className="projects__header">
-            <div className="content__container">
-              <h2 className="h1 margin__left--m">projects</h2>
+            <div className="projects__header">
+              <div className="content__container">
+                <h2 className="h1 margin__left--m">projects</h2>
+              </div>
             </div>
-          </div>
-          <div className="projects__container">
-            {edges.map(edge => (
-              <ProjectSection key={edge.node.id} projectData={edge.node} />
-            ))}
-          </div>
-        </section>
+            <div className="projects__container">
+              {edges.map(edge => (
+                <ProjectSection
+                  key={edge.node.id}
+                  projectData={edge.node}
+                />
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </Layout>
@@ -91,11 +106,11 @@ const HomePage = ({data}) => {
 
 export default HomePage
 
-
 export const pageQuery = graphql`
   query {
-    
-    recentProjects: allProjectsJson(sort: {order: DESC, fields: data_created}) {
+    recentProjects: allProjectsJson(
+      sort: { order: DESC, fields: data_created }
+    ) {
       edges {
         node {
           id

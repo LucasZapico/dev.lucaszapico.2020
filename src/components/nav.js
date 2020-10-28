@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import Mark from "../assets/images/mark.svg"
-import MarkLight from "../assets/images/mark-light.svg"
-import { IoIosMenu, IoIosClose } from "react-icons/io"
-import { Link } from "gatsby"
+import React, { useState } from 'react'
+import Mark from '../assets/images/mark.svg'
+import MarkLight from '../assets/images/mark-light.svg'
+import { IoIosMenu, IoIosClose } from 'react-icons/io'
+import { Link } from 'gatsby'
 
 const PrimaryMenu = () => (
   <div className="pri-menu">
@@ -13,6 +13,9 @@ const PrimaryMenu = () => (
         </li>
         <li className="pri-menu__item h3">
           <Link to="/about">About</Link>
+        </li>
+        <li className="pri-menu__item h3">
+          <Link to="/articles">Articles</Link>
         </li>
       </div>
       <div>
@@ -27,9 +30,9 @@ const PrimaryMenu = () => (
               Method
             </Link>
           </li>*/}
-        <li className="pri-menu__item h3">
+        {/* <li className="pri-menu__item h3">
           <Link to="/playground">Playground</Link>
-        </li>
+        </li> */}
       </div>
     </ul>
     <MarkLight className="pri-menu__mark" />
@@ -40,40 +43,40 @@ const PrimaryNav = () => {
   //   const width = useCurrentWidth()
   const width = 900
   const [showMenu, setShowMenu] = useState(false)
-  const [playSt, setPlaySt] = useState("stop")
+  const [playSt, setPlaySt] = useState('stop')
 
   return (
-      <>
-    <div className="nav__container">
-      <nav className="nav ">
-        <div className="mark">
-          <Link to="/">
-            <Mark />
-          </Link>
-        </div>
-        {width > 800 ? (
-          <Link to="/">
-            <div className="nav__header h4">Dev.LucasZapico</div>
-          </Link>
-        ) : undefined}
-        <>
-          <div className="sidenav__toggle">
-            {!showMenu ? (
-              <IoIosMenu
-                onClick={() => {
-                  setShowMenu(!showMenu)
-                }}
-              />
-            ) : (
-              <IoIosClose
-                onClick={() => {
-                  setShowMenu(!showMenu)
-                }}
-              />
-            )}
+    <>
+      <div className="nav__container">
+        <nav className="nav ">
+          <div className="mark">
+            <Link to="/">
+              <Mark />
+            </Link>
           </div>
-        </>
-      </nav>
+          {width > 800 ? (
+            <Link to="/">
+              <div className="nav__header h4">Dev.LucasZapico</div>
+            </Link>
+          ) : undefined}
+          <>
+            <div className="sidenav__toggle">
+              {!showMenu ? (
+                <IoIosMenu
+                  onClick={() => {
+                    setShowMenu(!showMenu)
+                  }}
+                />
+              ) : (
+                <IoIosClose
+                  onClick={() => {
+                    setShowMenu(!showMenu)
+                  }}
+                />
+              )}
+            </div>
+          </>
+        </nav>
       </div>
       {showMenu ? (
         <div className="sidenav__primary">

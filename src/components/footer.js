@@ -1,28 +1,28 @@
-import React, {useState} from "react"
-import { IoIosLink, IoIosHeart } from 'react-icons/io';
-import {Link } from 'gatsby'
+import React, { useState } from 'react'
+import { IoIosLink, IoIosHeart } from 'react-icons/io'
+import { Link } from 'gatsby'
 
 const Footer = () => {
-    const [formInput, setFormInput] = useState({
-        email: ''
-    })
-    const handleFormChange = (e) => {
-        const newFormData = formInput;
-        newFormData[e.target.type] = e.target.value;
-        console.log(formInput);
-      };
-      const handleSubmit = (e) => {
-        e.preventDefault();
-      };
-    return ( 
-        <footer className="footer container padding--all">
+  const [formInput, setFormInput] = useState({
+    email: '',
+  })
+  const handleFormChange = e => {
+    const newFormData = formInput
+    newFormData[e.target.type] = e.target.value
+    console.log(formInput)
+  }
+  const handleSubmit = e => {
+    e.preventDefault()
+  }
+  return (
+    <footer className="footer container padding--all">
       <div className="footer container__content">
         <div className="form container">
           <div className="form__message">
             <h4>Cheers</h4>
             <div className="policy__item">
-          <Link to="/style-guide">Style Guide</Link>
-        </div>
+              <Link to="/style-guide">Style Guide</Link>
+            </div>
             {/* <p>Get emails from us once and a while.</p> */}
           </div>
           {/* <form className="form" onSubmit={(e) => handleSubmit(e)}>
@@ -61,6 +61,12 @@ const Footer = () => {
           </form> */}
         </div>
         <hr></hr>
+        <div className="footer__section">
+          <h6>Other Places To Find Me</h6>
+          <a href="https://design.lucaszapico.space" className="link">
+            Design.LucasZapico.space
+          </a>
+        </div>
         <div className="footer--contact">
           {/* <div className="">
             
@@ -89,23 +95,22 @@ const Footer = () => {
           </div>
           <div>
             {/*  */}
-            Last-Modified: 2020/10/18
+            Last-Modified: '2020/10/27'
             {/*  */}
           </div>
         </div>
         <div className="footer__policy">
-        <div className="policy__item">© Copyright 2020</div>
-        {/* <div class="policy__item">
+          <div className="policy__item">© Copyright 2020</div>
+          {/* <div class="policy__item">
 			Terms & Conditions
 		</div> */}
-        <div className="policy__item">
-          <Link to="/privacy">Privacy Policy</Link>
+          <div className="policy__item">
+            <Link to="/privacy">Privacy Policy</Link>
+          </div>
         </div>
       </div>
-      </div>
-      
     </footer>
-     );
+  )
 }
- 
-export default Footer;
+
+export default Footer
