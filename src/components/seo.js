@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { useLocation } from '@reach/router'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ title, description, image, article }) => {
   const { pathname } = useLocation()
@@ -31,7 +31,9 @@ const SEO = ({ title, description, image, article }) => {
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 
-      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {(article ? true : null) && (
+        <meta property="og:type" content="article" />
+      )}
 
       {seo.title && <meta property="og:title" content={seo.title} />}
 
@@ -54,6 +56,12 @@ const SEO = ({ title, description, image, article }) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <meta
+        property="og:image"
+        content={site.siteMetadata.siteUrl + '/opengraph-gen.png'}
+      />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:width" content="50" />
     </Helmet>
   )
 }
