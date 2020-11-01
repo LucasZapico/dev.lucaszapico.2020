@@ -26,7 +26,7 @@
                 "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": "",
+                "deliverables": ["Chrome extension", "Chrome extension build process",  "product page"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -58,7 +58,7 @@
                 "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -84,13 +84,12 @@
                 "deliverables": ["development","design direction", "web design"]
             },
             "main": {
-                "overview": "",
-                "objective": "",
+                "overview": "Build an aesthetic chrome extension that generates a secure password on click to facilitates security workflow.",
                 "features": "",
-                "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": "",
+                "challenge": "Design and develop a simple, password generator that operates in the chrome browser.",
+                "solution": "Worked through how to build Chrome extensions. Utilized a password generating npm package to handle password creation. Designed a more aesthetic UI and UX.",
+                "result": "The Pretty Password Chrome extension and Gatsby product page.",
+                "deliverables": ["development","design direction", "web design"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -122,7 +121,7 @@
                 "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -154,7 +153,7 @@
                 "challenge": "Design a brand identity, color, typography and mark that positioned itself at the desired market. Leading to lead generation in the form of email capture.",
                 "solution": "",
                 "result": "",
-                "deliverables": "",
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -187,7 +186,7 @@
                 "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": "",
+                "deliverables": ["Chrome extension", "Chrome extension build process",  "product page"],
                 "takeaways": ""
             },
             "role": "developer"

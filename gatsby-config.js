@@ -6,11 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Site Title',
+    title: 'Dev.LucasZapico.2020',
     titleTemplate: '%s · dev.lucaszapico.space',
-    description: 'Amazing Site Description',
+    description:
+      'A place of dev projects, notes and tinkering from Lucas Zapico',
     author: '@dev.lucaszapico.space',
-    url: 'http://devlucaszapico.netlify.app',
+    siteUrl: 'http://devlucaszapico.netlify.app',
     image: '/opengraph-gen.png',
     twitterUsername: '@devlucas',
   },

@@ -10,7 +10,7 @@ const PrivacyPage = ({ children }) => {
       site {
         siteMetadata {
           title
-          siteUrl: url
+          siteUrl
           author
         }
       }

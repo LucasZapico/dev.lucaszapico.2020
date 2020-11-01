@@ -67,35 +67,66 @@ export default function Template(props) {
             </div>
           </div>
           <div className="project__main margin__top ">
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Overview</div>
-              <div className="body__large">{main.overview}</div>
-            </div>
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Objective</div>
-              <div className="body__large">{main.objective}</div>
-            </div>
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Features</div>
-              <div className="body__large">{main.features}</div>
-            </div>
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Challenge</div>
-              <div className="body__large">{main.challenge}</div>
-            </div>
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Solution</div>
-              <div className="body__large">{main.solution}</div>
-            </div>
+            {main.overview ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Overview</div>
+                <div className="body__large">{main.overview}</div>
+              </div>
+            ) : undefined}
+            {main.objective ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Objective</div>
+                <div className="body__large">{main.objective}</div>
+              </div>
+            ) : undefined}
+
+            {main.features ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Features</div>
+                <div className="body__large">{main.features}</div>
+              </div>
+            ) : undefined}
+            {main.challenge ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Challenge</div>
+                <div className="body__large">{main.challenge}</div>
+              </div>
+            ) : undefined}
+
+            {main.solution ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Solution</div>
+                <div className="body__large">{main.solution}</div>
+              </div>
+            ) : undefined}
+
             <div className="margin__y--m">
               <div className="strong margin__y ">Result</div>
               <div className="body__large">{main.result}</div>
             </div>
-            <div className="margin__y--m">
-              <div className="strong margin__y ">Deliverables</div>
-              <div className="body__large">{main.deliverables}</div>
-            </div>
-            <div className="body__large">{main.takeaways}</div>
+            {main.deliverables ? (
+              <div className="margin__y--m">
+                <div className="strong margin__y ">Deliverables</div>
+
+                <div className="project margin__bottom--m margin__top">
+                  <div className="strong margin__bottom">
+                    Technology
+                  </div>
+                  {main.deliverables.map((d, i) => {
+                    const key = `${d.toLowerCase()}-${i}`
+                    return (
+                      <div className="body__default" key={key}>
+                        {d}
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            ) : undefined}
+
+            {main.objective ? (
+              <div className="body__large">{main.takeaways}</div>
+            ) : undefined}
           </div>
           <div className="project__more">
             <div className="">
