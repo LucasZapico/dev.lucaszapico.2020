@@ -11,7 +11,7 @@ module.exports = {
     description:
       'A place of dev projects, notes and tinkering from Lucas Zapico',
     author: '@dev.lucaszapico.space',
-    siteUrl: 'http://devlucaszapico.netlify.app',
+    siteUrl: 'http://dev.lucaszapico.space',
     image: '/opengraph-gen.png',
     twitterUsername: '@devlucas',
   },

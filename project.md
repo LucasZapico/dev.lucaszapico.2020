@@ -1,17 +1,23 @@
 # Project
 
+- Find and issue or suggest and improvement, take out and issue on GitHub
+- About this project
+- room for improvements
+-
+
 ## Checklist
 
+- [ ] animations??
 - [x] open graph image
 - [ ] optimized for production
   - [ ] minified css and js
 - [ ] removed unused packages, components, css etc
 - [x] privacy policy
-- [ ] developer/admin contact
+- [x] developer/admin contact
 - [x] seo
-- [ ] bread crumbs
+- [x] bread crumbs
 - [ ] add light/dark mode toggle
-- [ ] fix hover and focus states of links (check footer)
+- [x] fix hover and focus states of links (check footer)
 
 ---
 
@@ -19,12 +25,13 @@
 
 #### Articles
 
+- [ ] add search and filter for articles
 - [ ] table of contents
-- [ ] syntax highlighting
-- [ ] date created
-- [ ] categories
-- [ ] tags
-- [ ] next prev
+- [x] syntax highlighting
+- [x] date created
+- [x] categories
+- [x] tags
+- [x] next prev
 - [ ] page is useful?
 - [ ]
 

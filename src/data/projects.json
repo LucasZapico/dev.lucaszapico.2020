@@ -64,7 +64,7 @@
                 "deliverables": ["development", "design direction", "web design"]
             },
             "main": {
-                "overview": "Build an aesthetic chrome extension that generates a secure password on click to facilitates security workflow.",
+                "overview": "Build an aesthetic chrome extension that generates a secure password on click to facilitate security workflow.",
                 "features": "",
                 "challenge": "Design and develop a simple, password generator that operates in the chrome browser.",
                 "solution": "Worked through how to build Chrome extensions. Utilized a password generating npm package to handle password creation. Designed a more aesthetic UI and UX.",
@@ -118,7 +118,7 @@
         "path": "/projects/northern-wind-southern-sun/",
         "link": "https://northernwind-southernsun.com/",
         "repo": "",
-        "subheader": "Northern Wind & Souther Sun is our beautiful shop site",
+        "subheader": "Northern Wind & Southern Sun is our beautiful shop site",
         "data-created": "05/23/2020",
         "last-modified": "06/30/2020",
         "categories": ["project", "web-site"],

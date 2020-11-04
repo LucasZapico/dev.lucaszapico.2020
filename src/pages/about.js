@@ -10,20 +10,20 @@ const AboutPage = ({ data, location }) => (
     <SEO title="About" />
     <div className="page container__content ">
       <div className="char__readable measure__default center">
-        <h4 className="">I learn, analysis, create, and iterate.</h4>
+        <h4 className="">I learn, analyze, create, and iterate.</h4>
         <h5>The Method</h5>
         <p>
-          My method is to immersed, discuss, ship, get feedback, and
-          to be patient because understanding and quality both take
-          time and effort.
+          My method is to immerse, discuss, ship, get feedback, and be
+          patient because understanding and quality both take time and
+          effort.
         </p>
         <h5>The Objective</h5>
         <p>
-          I enjoy nothing more then building something efficient and
+          I enjoy nothing more than building something efficient and
           competitive! The process itself is an addiction. I am
           energized by democratizing the creative process and
-          exploring the unique, clever, strange, and sometime
-          hilarious solutions that open collaborations fosters.
+          exploring the unique, clever, strange, and sometimes
+          hilarious solutions that open collaboration fosters.
         </p>
         <h5>The Tools</h5>
         <p className="margin__bottom--l">

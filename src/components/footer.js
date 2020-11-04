@@ -23,7 +23,7 @@ const Footer = () => {
             <h4>Cheers</h4>
             <div className="contact__email">
               <div className="contact__header">
-                Have me built something
+                Let's build something unqiue.
               </div>
               <a
                 target="_blank"
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <div>
             {/*  */}
-            Last-Modified: '2020/11/03'
+            Last-Modified: '2020/11/04'
             {/*  */}
           </div>
         </div>

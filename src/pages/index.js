@@ -87,7 +87,7 @@ const HomePage = ({ data, location }) => {
           <section className="section projects">
             <div className="projects__header">
               <div className="content__container">
-                <h2 className="h1 margin__left--m">projects</h2>
+                <h2 className="h1 margin__left--m">Projects</h2>
               </div>
             </div>
             <div className="projects__container">
