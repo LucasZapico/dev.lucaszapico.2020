@@ -6,14 +6,15 @@ import { IoIosArrowRoundForward } from 'react-icons/io'
 import SEO from '../components/seo'
 
 const Post = ({ post, progress }) => {
-  console.log('test', post.frontmatter.title)
-  console.log('test', post.frontmatter.featured)
   return (
     <div className={`post card article`}>
       <Link to={post.fields.path}>
         <div className="post__content">
           <div className="post__header">
             <h4 className="post__title">{post.frontmatter.title}</h4>
+            <div className="post__date">
+              {post.frontmatter.date_created}
+            </div>
           </div>
           <div className="post__body">
             <h6 className="body__large post__description">
@@ -22,7 +23,7 @@ const Post = ({ post, progress }) => {
             <div className="post__filters">
               <div>
                 <div className="">Categoies</div>
-                <div className="post__categories">
+                <div className="post__categories ">
                   {post.frontmatter.categories.map((c, i) => (
                     <div
                       key={i + c.replace(' ', '-')}
@@ -35,7 +36,7 @@ const Post = ({ post, progress }) => {
               </div>
               <div>
                 <div className="">Tags</div>
-                <div className="post__tags">
+                <div className="post__tags ">
                   {post.frontmatter.tags.map((t, i) => (
                     <div
                       key={i + t.replace(' ', '-')}
@@ -54,7 +55,7 @@ const Post = ({ post, progress }) => {
   )
 }
 
-const HomePage = ({ data }) => {
+const ArticlesPage = ({ data, location }) => {
   const edges = data.articles.edges
   // function getCategories() {
   //   let allCategories = []
@@ -69,10 +70,10 @@ const HomePage = ({ data }) => {
       <SEO title="articles" />
       <div className="container articles page">
         <header className="articles header"></header>
-        <div className="content articels">
+        <div className="content articles">
           <section className="section">
             <div className="header">
-              <div className="">
+              <div className="header__title">
                 <h2 className="h1 margin__left--m">Articles</h2>
               </div>
             </div>
@@ -88,28 +89,47 @@ const HomePage = ({ data }) => {
   )
 }
 
-export default HomePage
+export default ArticlesPage
 
 export const pageQuery = graphql`
   query {
     articles: allMarkdownRemark(
-      limit: 1000
+      sort: { order: DESC, fields: frontmatter___date_created }
       filter: { frontmatter: { isdraft: { eq: false } } }
-      sort: { order: DESC, fields: [frontmatter___date_created] }
     ) {
       edges {
         node {
-          id
+          fields {
+            path
+          }
+          tableOfContents
           html
+          id
+          frontmatter {
+            title
+            date_created
+            categories
+            tags
+            isdraft
+            description
+          }
+        }
+        next {
           fields {
             path
           }
           frontmatter {
             title
-            description
-            tags
-            categories
-            date_created
+            isdraft
+          }
+        }
+        previous {
+          frontmatter {
+            title
+            isdraft
+          }
+          fields {
+            path
           }
         }
       }

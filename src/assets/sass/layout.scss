@@ -1,5 +1,6 @@
 html,
-body, .app {
+body,
+.app {
     font-family: $base-family;
     background-color: $color-pri;
 }
@@ -19,10 +20,30 @@ main {
 ***/
 
 .container {
-    &.main {
+    &.main {}
 
+    &.flex {
+        display: flex;
+
+        &__sp-b {
+            justify-content: space-between;
+        }
+
+        &__sp-ar {
+            justify-content: space-around;
+        }
+
+        &__sp-st {
+            justify-content: flex-start;
+        }
+
+        &__sp-ed {
+            justify-content: flex-end;
+        }
     }
 }
+
+
 
 /***
 ** Section 
@@ -34,21 +55,13 @@ main {
 }
 
 
-@media screen and (min-width: 100px) {
-    
-}
+@media screen and (min-width: 100px) {}
 
 // 700px and up
-@media screen and (min-width: $media-small) {
-    
-}
+@media screen and (min-width: $media-small) {}
 
 // 960px 
-@media screen and (min-width: $media-med) {
-    
-    
-    
-}
+@media screen and (min-width: $media-med) {}
 
 @media screen and (min-width: $media-large) {
     .container {

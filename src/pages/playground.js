@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 
-const PlaygroundPage = () => (
+const PlaygroundPage = ({ location }) => (
   <Layout>
     <SEO title="playground" />
     <div className="page content--container">

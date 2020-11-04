@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import SEO from '../components/seo'
 
-const AboutPage = ({ data }) => (
+const AboutPage = ({ data, location }) => (
   <Layout>
     <SEO title="About" />
     <div className="page container__content ">

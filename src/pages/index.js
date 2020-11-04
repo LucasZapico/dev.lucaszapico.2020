@@ -22,6 +22,7 @@ const ProjectSection = ({ projectData, progress }) => {
             {projectData.subheader}
             {progress}
           </h6>
+          <div className="">Tags</div>
           <div className="project__tags ">
             {projectData.tags.map((t, i) => (
               <div key={i} className="project__tag body__default">
@@ -58,7 +59,7 @@ const ProjectSection = ({ projectData, progress }) => {
   )
 }
 
-const HomePage = ({ data }) => {
+const HomePage = ({ data, location }) => {
   const edges = data.recentProjects.edges
   return (
     <Layout>

@@ -36,6 +36,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             audio
+            link
+            repo
             categories
             data_created
             featured {
@@ -52,6 +54,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               }
             }
             content {
+              images {
+                imgOne {
+                  childImageSharp {
+                    fluid {
+                      base64
+                      aspectRatio
+                      src
+                      srcSet
+                      sizes
+                    }
+                  }
+                }
+              }
               main {
                 challenge
                 deliverables
@@ -105,36 +120,43 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const articleRes = await graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date_created }
+        filter: { frontmatter: { isdraft: { eq: false } } }
+      ) {
         edges {
+          node {
+            fields {
+              path
+            }
+            tableOfContents
+            html
+            id
+            frontmatter {
+              title
+              date_created
+              categories
+              tags
+              isdraft
+              description
+            }
+          }
           next {
             fields {
               path
             }
             frontmatter {
               title
+              isdraft
             }
           }
           previous {
-            fields {
-              path
-            }
             frontmatter {
               title
+              isdraft
             }
-          }
-          node {
-            id
-            html
             fields {
               path
-            }
-            frontmatter {
-              title
-            }
-            headings(depth: h2) {
-              depth
-              value
             }
           }
         }

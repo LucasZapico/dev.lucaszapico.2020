@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IoIosLink, IoIosHeart } from 'react-icons/io'
+import { IoIosHeart, IoIosOpen } from 'react-icons/io'
 import { Link } from 'gatsby'
 
 const Footer = () => {
@@ -15,14 +15,24 @@ const Footer = () => {
     e.preventDefault()
   }
   return (
-    <footer className="footer container padding--all">
+    <footer className="footer container padding__all">
       <div className="footer container__content">
         <div className="form container">
+          <hr></hr>
           <div className="form__message">
             <h4>Cheers</h4>
-            <div className="policy__item">
-              <Link to="/style-guide">Style Guide</Link>
+            <div className="contact__email">
+              <div className="contact__header">
+                Have me built something
+              </div>
+              <a
+                target="_blank"
+                href="mailto:business@lucaszapico.space"
+              >
+                business@lucaszapico.space
+              </a>
             </div>
+
             {/* <p>Get emails from us once and a while.</p> */}
           </div>
           {/* <form className="form" onSubmit={(e) => handleSubmit(e)}>
@@ -60,42 +70,21 @@ const Footer = () => {
             </div>
           </form> */}
         </div>
-        <hr></hr>
-        <div className="footer__section">
+
+        <div className="footer__section margin__y--m">
           <h6>Other Places To Find Me</h6>
           <a href="https://design.lucaszapico.space" className="link">
-            Design.LucasZapico.space
+            Design.LucasZapico.space <IoIosOpen />
           </a>
         </div>
-        <div className="footer--contact">
-          {/* <div className="">
-            
-          </div> */}
-          {/* <div className="contact">
-            <div>
-              <div className="contact__email">
-                <div className="contact__header">Make or check and order</div>
-                email@email.com
-              </div>
-            </div>
-            <div className="contact__phone">
-              <div className="contact__header">Give us a call</div>
-              111.111.1111
-            </div>
-          </div> */}
-          <div>
-            {/* <h4 className="footer--email">
-            We specialize in sustainable digital engagement solutions
-          </h4> */}
-          </div>
-        </div>
+
         <div>
           <div>
-            © 2020, Built with <IoIosHeart /> By Lucas Zapico
+            Built with <IoIosHeart /> By Lucas Zapico
           </div>
           <div>
             {/*  */}
-            Last-Modified: '2020/10/27'
+            Last-Modified: '2020/11/03'
             {/*  */}
           </div>
         </div>

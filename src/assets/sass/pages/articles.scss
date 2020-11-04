@@ -1,4 +1,11 @@
 .article.post.card {
+  min-height: 200px;
+  min-width: 200px;
+  box-shadow: 10px -10px #333333;
+  margin: 1rem;
+  padding: $space-atom * $md;
+  background-color: #e9e5e0;
+
   a {
     text-decoration: none;
 
@@ -10,6 +17,10 @@
       color: $color-grey-8;
     }
   }
+
+
+
+
 
   .post {
     cursor: pointer;
@@ -42,6 +53,11 @@
       display: flex;
       justify-content: flex-start;
       color: $sec-type-color;
+
+    }
+
+    &__category {
+      word-wrap: none;
     }
 
     &__tags {
@@ -53,6 +69,7 @@
     &__filters {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 }
@@ -60,8 +77,14 @@
 
 .articles {
   .article {
-    padding: $space-atom * $md;
-    background-color: #e9e5e0;
+    // padding: $space-atom * $md;
+    // background-color: #e9e5e0;
+
+    &__more {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .article.measure__default {
@@ -69,14 +92,14 @@
     background-color: #e9e5e0;
   }
 
-  &__container {
-    &>div {
-      min-height: 200px;
-      min-width: 200px;
-      box-shadow: 10px -10px #333333;
-      margin: 1rem;
-    }
-  }
+  // &__container {
+  //   &>div {
+  //     min-height: 200px;
+  //     min-width: 200px;
+  //     box-shadow: 10px -10px #333333;
+  //     margin: 1rem;
+  //   }
+  // }
 }
 
 
@@ -99,10 +122,7 @@
       margin-bottom: $space-atom * $sm;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
+
     h5,
     h6,
     p,
@@ -125,10 +145,7 @@
   // 700px and up
   @media screen and (min-width: $media-small) {
 
-    h1,
-    h2,
-    h3,
-    h4,
+
     h5,
     h6,
     p,
@@ -147,6 +164,15 @@
     }
 
     .articles {
+      .article {
+
+
+        &__more {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
       &__container {
         display: grid;
         grid-template-columns: 1fr 1fr;

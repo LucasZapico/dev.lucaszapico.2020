@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import { IoIosArrowRoundForward, IoIosRocket } from 'react-icons/io'
 
 const StyleGuidePage = () => {
   const colorsCore = useRef(null)
@@ -101,12 +103,67 @@ const StyleGuidePage = () => {
             </div>
           </section>
           <section className="section">
-            <h3 className="h4">Butotns And Links</h3>
-            <button className=""></button>
+            <h3 className="h4">Buttns And Links</h3>
+            <div className="margin__y--m">
+              <Link
+                to="/style-guide"
+                className="link margin__right--l"
+              >
+                I'm a link
+              </Link>
+              <Link
+                to="/style-guide"
+                className="icon__arrow link__primary--dark"
+              >
+                More On The project{''} <IoIosArrowRoundForward />
+              </Link>
+            </div>
+            <div>
+              <Link to="/style-guide" className="link link__icon">
+                I'm a link <IoIosRocket />
+              </Link>
+            </div>
           </section>
           <section className="section">
             <h3 className="h4">Card</h3>
-            <div className="card"></div>
+            <div className="container flex flex__sp-st">
+              <div className="card post article">
+                <div className="post__header">
+                  <h4 className="post__title">Title</h4>
+                  <div className="post__date">Date</div>
+                </div>
+                <div className="post__body">
+                  <h6 className="body__large post__description">
+                    Eu enim consequat sunt ipsum aliqua laborum.
+                  </h6>
+                </div>
+              </div>
+              <div className="card post article">
+                <div className="post__header">
+                  <h4 className="post__title">Title</h4>
+                  <div className="post__date">Date</div>
+                </div>
+                <div className="post__body">
+                  <h6 className="body__large post__description">
+                    Eu enim consequat sunt ipsum aliqua laborum.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="section">
+            <h3 className="h4">Categories and Tags</h3>
+            <div className="container">
+              <div className="">Categories</div>
+              <div className="container flex ">
+                <div className="categories margin__right">
+                  category-one,
+                </div>
+                <div className="categories margin__right">
+                  category-two
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>

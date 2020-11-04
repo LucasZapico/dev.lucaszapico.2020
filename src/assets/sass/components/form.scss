@@ -1,0 +1,29 @@
+input,
+.input input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  border: none;
+
+  &:hover,
+  &:focus {}
+
+  &:active {}
+}
+
+.form {
+
+  input {
+    min-height: 4rem;
+    flex-grow: 1;
+  }
+
+  &>div {
+    width: 100%;
+  }
+
+}

@@ -1,8 +1,8 @@
-
 /***
 ** space vars
 ***/
 $space-atom: 1rem;
+$xs: 0.5;
 $sm: 0.8;
 $md: 2;
 $lg: 4;
@@ -14,8 +14,8 @@ $space-md: $md;
 $space-xl: $xl;
 
 .icon {
-	&--sm {
-	}
+	&--sm {}
+
 	&--m {
 		font-size: 1.5rem;
 	}
@@ -25,69 +25,89 @@ $space-xl: $xl;
 	.margin {
 		&__all {
 			margin: $space-atom;
+
 			&--m {
 				margin: $space-atom * $md;
 			}
+
 			&--l {
 				margin: $space-atom * $lg;
 			}
 		}
+
 		&__y {
 			margin-top: $space-atom;
 			margin-bottom: $space-atom;
+
 			&--m {
 				margin-top: $space-atom * $md;
 				margin-bottom: $space-atom * $md;
 			}
+
 			&--l {
 				margin-top: $space-atom * $lg;
 				margin-bottom: $space-atom * $lg;
 			}
 		}
+
 		&__x {
 			margin-left: $space-atom;
 			margin-right: $space-atom;
+
 			&--m {
 				margin-left: $space-atom * $md;
 				margin-right: $space-atom * $md;
 			}
+
 			&--l {
 				margin-left: $space-atom * $lg;
 				margin-right: $space-atom * $lg;
 			}
 		}
+
 		&__top {
 			margin-top: $space-atom;
+
 			&--m {
 				margin-top: $space-atom * $md;
 			}
+
 			&--l {
 				margin-top: $space-atom * $lg;
 			}
 		}
+
 		&__bottom {
 			margin-bottom: $space-atom;
+
 			&--m {
 				margin-bottom: $space-atom * $md;
 			}
+
 			&--l {
 				margin-bottom: $space-atom * $lg;
 			}
 		}
+
 		&__left {
 			margin-left: $space-atom;
+
 			&--m {
 				margin-left: $space-atom * $md;
 			}
+
 			&--l {
 				margin-left: $space-atom * $lg;
 			}
 		}
+
 		&__right {
 			margin-right: $space-atom;
+
 			&--m {
 				margin-right: $space-atom * $md;
 			}
+
 			&--l {
 				margin-right: $space-atom * $lg;
 			}
@@ -98,26 +118,33 @@ $space-xl: $xl;
 		&__kill {
 			padding: 0px;
 		}
+
 		&__all {
 			padding: $space-atom;
 		}
+
 		&__y {
 			padding-top: $space-atom;
 			padding-bottom: $space-atom;
 		}
+
 		&__x {
 			padding-left: $space-atom;
 			padding-right: $space-atom;
 		}
+
 		&__top {
 			padding-top: $space-atom;
 		}
+
 		&__bottom {
 			padding-bottom: $space-atom;
 		}
+
 		&__left {
 			padding-left: $space-atom;
 		}
+
 		&__right {
 			padding-right: $space-atom;
 		}
@@ -128,58 +155,71 @@ $space-xl: $xl;
 			&--m {
 				padding: $space-atom * $md;
 			}
+
 			&--l {
 				padding: $space-atom * $lg;
 			}
 		}
+
 		&__y {
 			&--m {
 				padding-top: $space-atom * $md;
 				padding-bottom: $space-atom * $md;
 			}
+
 			&--l {
 				padding-top: $space-atom * $lg;
 				padding-bottom: $space-atom * $lg;
 			}
 		}
+
 		&__x {
 			&--m {
 				padding-left: $space-atom * $md;
 				padding-right: $space-atom * $md;
 			}
+
 			&--l {
 				padding-left: $space-atom * $lg;
 				padding-right: $space-atom * $lg;
 			}
 		}
+
 		&__top {
 			&--m {
 				padding-top: $space-atom * $md;
 			}
+
 			&--l {
 				padding-top: $space-atom * $lg;
 			}
 		}
+
 		&__bottom {
 			&--m {
 				padding-bottom: $space-atom * $md;
 			}
+
 			&--l {
 				padding-bottom: $space-atom * $lg;
 			}
 		}
+
 		&__left {
 			&--m {
 				padding-left: $space-atom * $md;
 			}
+
 			&--l {
 				padding-left: $space-atom * $lg;
 			}
 		}
+
 		&__right {
 			&--m {
 				padding-right: $space-atom * $md;
 			}
+
 			&--l {
 				padding-right: $space-atom * $lg;
 			}
@@ -190,6 +230,7 @@ $space-xl: $xl;
 .center {
 	display: block;
 	margin: auto;
+
 	&__text {
 		text-align: center;
 	}
