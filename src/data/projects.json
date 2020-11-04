@@ -1,61 +1,34 @@
 [{
-        "title": "Green Star News",
-        "path": "/projects/green-star-news/",
-        "subheader": "Green Star News is Gatsby news platform demo",
-        "data-created": "10/10/2020",
-        "last-modified": "10/13/2020",
-        "categories": ["prject", "demo"],
-        "tags": ["gatsby", "react", "user-experience", "development", "ui-design"],
-        "featured": {
-            "src" :"../assets/images/projects/featured/green-star-news-showcase.png"
-        } ,
-        "isdraft": false,
-        "isComingSoon": true,
-        "technology-stack": ["figma", "codepen", "gastby","github"],
-        "audio": "/audio/markie-II.mp3",
-        "content": {
-            "summary": {
-                "challenge": "",
-                "outcome": "",
-                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
-            },
-            "main": {
-                "overview": "",
-                "objective": "",
-                "features": "",
-                "challenge": "",
-                "solution": "",
-                "result": "",
-                "deliverables": ["Chrome extension", "Chrome extension build process",  "product page"],
-                "takeaways": ""
-            },
-            "role": "developer"
-        }
-    },
-    {
         "title": "Modalero Shop",
         "path": "/projects/modalero-shop",
         "subheader": "A boutique shopping experience Reach Shopify experience",
+        "link": "https://modalero-store-prototype-1.herokuapp.com/",
+        "repo": "https://github.com/LucasZapico/modalero-store-prototype-1.0",
         "data-created": "09/10/2020",
         "last-modified": "09/15/2020",
         "categories": ["prject"],
         "tags": ["web-app", "shopify", "react", "user-experience", "development", "ui-design"],
-        "featured": {"src":"../assets/images/projects/featured/modalero-shop.png"},
+        "featured": {
+            "src": "../assets/images/projects/featured/modalero-shop.png"
+        },
         "isdraft": false,
         "isComingSoon": false,
-        "technology-stack": ["figma", "codesandbox", "react-hooks", "github"],
+        "technology-stack": ["figma", "codesandbox", "react-hooks", "github", "heroku"],
         "audio": "",
         "content": {
+            "images": {
+                "imgOne": "../assets/images/projects/shoping-showcase-product.png"
+            },
             "summary": {
-                "challenge": "",
-                "outcome": "",
-                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
+                "challenge": "Prototype a shopping experience for Modalero shop",
+                "outcome": "An enhanced UX and UI built designed Figma and build with React home page preview ready for integration with Shopify API.",
+                "deliverables": ["user experience design", "web design", "development", "user interface design"]
             },
             "main": {
                 "overview": "",
                 "objective": "",
                 "features": "",
-                "challenge": "",
+                "challenge": "Design and develop an accessible, engaging and intuitive experience. Focused on facilitating the discovery of new products, exploring of previous interest and, enabling informed purchase decisions.",
                 "solution": "",
                 "result": "",
                 "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
@@ -68,20 +41,27 @@
         "title": "Pretty Password",
         "path": "/projects/pretty-password/",
         "subheader": "Pretty Password is a chrome extension to quickly generate secure passwords",
+        "link": "https://pretty-password.lucaszapico.space/",
+        "repo": "https://github.com/LucasZapico/chrome-2020-password-generator",
         "data-created": "10/1/2020",
         "last-modified": "10/4/2020",
         "categories": ["project", "chrome-extension"],
         "tags": ["chrome", "gatsby", "react", "user-experience", "development", "ui-design"],
-        "featured": {"src":"../assets/images/projects/featured/pretty-password.png"},
+        "featured": {
+            "src": "../assets/images/projects/featured/pretty-password.png"
+        },
         "isdraft": false,
         "isComingSoon": false,
         "technology-stack": ["figma", "webpack", "javascript", "codepen", "gastby"],
         "audio": "/audio/pretty-password-I.mp3",
         "content": {
+            "images": {
+                "imgOne": "../assets/images/projects/pretty-password-showcase-1.png"
+            },
             "summary": {
                 "challenge": "Create a simple secure password generator for Chrome ",
                 "outcome": "Designed a pretty password generator Chrome extension and product site.",
-                "deliverables": ["development","design direction", "web design"]
+                "deliverables": ["development", "design direction", "web design"]
             },
             "main": {
                 "overview": "Build an aesthetic chrome extension that generates a secure password on click to facilitates security workflow.",
@@ -89,7 +69,7 @@
                 "challenge": "Design and develop a simple, password generator that operates in the chrome browser.",
                 "solution": "Worked through how to build Chrome extensions. Utilized a password generating npm package to handle password creation. Designed a more aesthetic UI and UX.",
                 "result": "The Pretty Password Chrome extension and Gatsby product page.",
-                "deliverables": ["development","design direction", "web design"],
+                "deliverables": ["development", "design direction", "web design"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -99,20 +79,27 @@
         "title": "Mark'ie",
         "path": "/projects/mark-ie",
         "subheader": "Mark'ie is an opinionated markdown journal prototype",
+        "link": "https://journal-app-2020.firebaseapp.com/",
+        "repo": "https://github.com/LucasZapico/journal-app-2020",
         "data-created": "05/23/2020",
         "last-modified": "07/03/2020",
         "categories": ["project", "web-app"],
         "tags": ["react", "user-experience", "development", "ui-design"],
-        "featured": {"src":"../assets/images/projects/featured/markie.png"},
+        "featured": {
+            "src": "../assets/images/projects/featured/markie.png"
+        },
         "isdraft": false,
         "isComingSoon": false,
         "technology-stack": ["figma", "react-hooks", "context-api", "firebase"],
         "audio": "/audio/markie-II.mp3",
         "content": {
+            "images": {
+                "imgOne": "../assets/images/projects/markie-experience.png"
+            },
             "summary": {
-                "challenge": "",
-                "outcome": "",
-                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
+                "challenge": "Prototype a markdown journal application, proof of concept for extending markdown syntax into to enable tags and categories.",
+                "outcome": "Successful production of markdown journal hosted on Firebase with inline categories definitions",
+                "deliverables": ["branding", "illurstration", "design direction", "user experience design", "web design", "development"]
             },
             "main": {
                 "overview": "",
@@ -129,18 +116,24 @@
     }, {
         "title": "Northern Wind & Southern Sun",
         "path": "/projects/northern-wind-southern-sun/",
+        "link": "https://northernwind-southernsun.com/",
+        "repo": "",
         "subheader": "Northern Wind & Souther Sun is our beautiful shop site",
         "data-created": "05/23/2020",
         "last-modified": "06/30/2020",
         "categories": ["project", "web-site"],
         "tags": ["gatsby", "user-experience", "development", "ui-design"],
-        "featured": {"src":"../assets/images/projects/featured/nothernwind-showcase.png"},
+        "featured": {
+            "src": "../assets/images/projects/featured/nothernwind-showcase.png"
+        },
         "isdraft": false,
         "isComingSoon": false,
         "technology-stack": ["figma", "gatsby"],
-        "audio": "/static/audio/markie-II.mp3",
+        "audio": "/audio/nothern-wind-southern-sun-iii.mp3",
         "content": {
-            "audio": "",
+            "images": {
+                "imgOne": "../assets/images/projects/nw-ss-showcase-1.png"
+            },
             "summary": {
                 "challenge": "Create a brand, web experience and initial business lead funnel with automated email campaign. ",
                 "outcome": "Design of a unique boutique agency site with clear experience defining services and funnel to lead capture. ",
@@ -162,21 +155,26 @@
     {
         "title": "Yoga Of Words",
         "path": "/projects/yoga-of-words/",
+        "link": "https://yogaofwords.com/",
         "subheader": "Yoga of Words is an uplifting poetry and prose experience",
         "data-created": "05/22/2020",
         "last-modified": "06/15/2020",
         "categories": ["project", "web-site"],
         "tags": ["gatsby", "user-experience", "development", "ui-design"],
-        "featured": {"src": "../assets/images/projects/featured/yoga-of-word-showcase.png"},
+        "featured": {
+            "src": "../assets/images/projects/featured/yoga-of-word-showcase.png"
+        },
         "isdraft": false,
         "isComingSoon": false,
-        "technology-stack": ["figma", "gatsby"],
-        "audio": "/static/audio/yoga-of-words-I.mp3",
+        "technology-stack": ["figma", "gatsby", "react", "netlify", "netlify-cms"],
+        "audio": "/audio/yoga-of-words-i.mp3",
         "content": {
-            "audio": "",
+            "images": {
+                "imgOne": "../assets/images/projects/yogaofwords-showcase-1.png"
+            },
             "summary": {
-                "challenge": "",
-                "outcome": "",
+                "challenge": "Create a digital poetry and prose experience",
+                "outcome": "Produced a Gatsby and CMS enabled blog that showcase poetry and prose in a unique and meaningful way",
                 "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
@@ -186,7 +184,7 @@
                 "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": ["Chrome extension", "Chrome extension build process",  "product page"],
+                "deliverables": ["Chrome extension", "Chrome extension build process", "product page"],
                 "takeaways": ""
             },
             "role": "developer"
