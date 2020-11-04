@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        // trackingId: "UA-111111-7",
+        trackingId: 'UA-118288221-5',
       },
     },
     'gatsby-plugin-sass',
@@ -33,6 +33,17 @@ module.exports = {
       resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './src/assets/images/favicon.png',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-page-progress',
+      options: {
+        // includePaths: ["/", { regex: "^/blog" }],
+        // excludePaths: ["/blog/beep-beep-lettuce"],
+        height: 3,
+        prependToBody: false,
+        color: '#221a1a',
+        footerHeight: 500,
       },
     },
     {

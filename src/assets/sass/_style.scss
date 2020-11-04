@@ -61,3 +61,45 @@
 		transform: scale(1);
 	}
 }
+
+// custom scroll bar
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: lighten($color-sec, 50%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $color-sec;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $color-sec;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: lighten($color-sec, 70%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $color-sec;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $color-sec;
+}

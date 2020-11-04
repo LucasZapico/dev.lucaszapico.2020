@@ -19,6 +19,7 @@
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^2.3.19",
+    "gatsby-plugin-page-progress": "^2.1.1",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.17",
