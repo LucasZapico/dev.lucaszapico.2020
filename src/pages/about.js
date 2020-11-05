@@ -1,6 +1,7 @@
 import React from 'react'
 // import Link from "gatsby-plugin-transition-link/AniLink"
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import SEO from '../components/seo'
@@ -17,6 +18,11 @@ const AboutPage = ({ data, location }) => (
           patient because understanding and quality both take time and
           effort.
         </p>
+        {/* {JSON.stringify(data, null, 4)} */}
+        {/* <Img
+          fluid={data.profile.childImageSharp.fluid}
+          objectFit="contain"
+        /> */}
         <h5>The Objective</h5>
         <p>
           I enjoy nothing more than building something efficient and
@@ -46,3 +52,16 @@ const AboutPage = ({ data, location }) => (
 )
 
 export default AboutPage
+
+export const query = graphql`
+  {
+    profile: file(name: { eq: "profile-avatar-2020" }) {
+      id
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

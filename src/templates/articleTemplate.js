@@ -30,10 +30,23 @@ export default function Template({
           <div className="article measure__default margin__y--l">
             <h1>{frontmatter.title}</h1>
             <div className="body">{frontmatter.date_created}</div>
-            <div className="margin__top breadcrumb">
+            <div className="margin__top--m breadcrumb">
               <Link to="/">Home /</Link>
               <Link to="/articles"> Articles / </Link>
               <Link to={path}> {frontmatter.title}</Link>
+            </div>
+            <div className="margin__top--m">
+              <div className="">Categories</div>
+              <div className="container categories ">
+                {frontmatter.categories.map((c, i) => (
+                  <div
+                    key={i + c.replace(' ', '-')}
+                    className="category body"
+                  >
+                    {c},
+                  </div>
+                ))}
+              </div>
             </div>
             <div
               className="blog-post-content"

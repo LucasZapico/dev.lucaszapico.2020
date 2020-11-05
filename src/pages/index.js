@@ -23,9 +23,9 @@ const ProjectSection = ({ projectData, progress }) => {
             {progress}
           </h6>
           <div className="">Tags</div>
-          <div className="project__tags ">
+          <div className="container tags ">
             {projectData.tags.map((t, i) => (
-              <div key={i} className="project__tag body__default">
+              <div key={i} className="tag ">
                 {t},
               </div>
             ))}

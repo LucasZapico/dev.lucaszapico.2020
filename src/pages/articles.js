@@ -21,26 +21,26 @@ const Post = ({ post, progress }) => {
               {post.frontmatter.description}
             </h6>
             <div className="post__filters">
-              <div>
-                <div className="">Categoies</div>
-                <div className="post__categories ">
+              <div className="margin__top">
+                <div className="">Categories</div>
+                <div className=" container categories ">
                   {post.frontmatter.categories.map((c, i) => (
                     <div
                       key={i + c.replace(' ', '-')}
-                      className="post__category body"
+                      className="category body"
                     >
                       {c},
                     </div>
                   ))}
                 </div>
               </div>
-              <div>
+              <div className="margin__top">
                 <div className="">Tags</div>
-                <div className="post__tags ">
+                <div className="container tags ">
                   {post.frontmatter.tags.map((t, i) => (
                     <div
                       key={i + t.replace(' ', '-')}
-                      className="post__tag body"
+                      className="tag body"
                     >
                       {t},
                     </div>

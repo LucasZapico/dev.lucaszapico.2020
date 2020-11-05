@@ -2,7 +2,7 @@
 title: 'Eslint and Prettier General Config'
 description: 'My 2020 configuration of Prettier and Eslint'
 date-created: 2020/10/21
-last-modified: '2020/10/27'
+last-modified: '2020/11/04'
 isdraft: false
 categories: ['dev-env', 'notes']
 tags: ['prettier', 'eslint']
@@ -76,4 +76,5 @@ _.eslint.json_
 ## References
 
 [Prettier & Eslint - Rw;eruch](https://www.robinwieruch.de/prettier-eslint)
+
 [Prettier Eslint in VSCode - Rw;eruch](https://www.robinwieruch.de/how-to-use-prettier-vscode)

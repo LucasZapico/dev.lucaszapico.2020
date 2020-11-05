@@ -156,10 +156,10 @@ const StyleGuidePage = () => {
             <div className="container">
               <div className="">Categories</div>
               <div className="container flex ">
-                <div className="categories margin__right">
+                <div className="category margin__right">
                   category-one,
                 </div>
-                <div className="categories margin__right">
+                <div className="category margin__right">
                   category-two
                 </div>
               </div>
