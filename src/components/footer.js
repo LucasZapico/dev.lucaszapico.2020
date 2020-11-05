@@ -16,7 +16,7 @@ const Footer = () => {
   }
   return (
     <footer className="footer container padding__all">
-      <div className="footer container__content">
+      <div className="footer ">
         <div className="form container">
           <hr></hr>
           <div className="form__message">
