@@ -20,6 +20,18 @@ main {
 ***/
 
 .container {
+
+    &.categories,
+    &.tags {
+
+        display: flex;
+        justify-content: flex-start;
+        color: $sec-type-color;
+        flex-wrap: wrap;
+
+
+    }
+
     &.main {}
 
     &.flex {
