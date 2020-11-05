@@ -20,18 +20,18 @@
                 "imgOne": "../assets/images/projects/shoping-showcase-product.png"
             },
             "summary": {
-                "challenge": "Prototype a shopping experience for Modalero shop",
-                "outcome": "An enhanced UX and UI built designed Figma and build with React home page preview ready for integration with Shopify API.",
-                "deliverables": ["user experience design", "web design", "development", "user interface design"]
+                "challenge": "Prototype a shopping experience for Modalero shop. Design and develop an accessible, engaging and intuitive experience. Focused on facilitating the discovery of new products, exploring of previous interest and, enabling informed purchase decisions.",
+                "outcome": "An enhanced UX and UI designed in Figma and build with React home page preview ready for integration with Shopify API.",
+                "deliverables": ["website","user experience design", "web design", "development", "user interface design"]
             },
             "main": {
                 "overview": "",
                 "objective": "",
                 "features": "",
-                "challenge": "Design and develop an accessible, engaging and intuitive experience. Focused on facilitating the discovery of new products, exploring of previous interest and, enabling informed purchase decisions.",
+                "challenge": "",
                 "solution": "",
                 "result": "",
-                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
+                "deliverables": ["branding", "design direction", "user experience design", "web design", "development"],
                 "takeaways": ""
             },
             "role": "developer"
@@ -59,17 +59,17 @@
                 "imgOne": "../assets/images/projects/pretty-password-showcase-1.png"
             },
             "summary": {
-                "challenge": "Create a simple secure password generator for Chrome ",
-                "outcome": "Designed a pretty password generator Chrome extension and product site.",
-                "deliverables": ["development", "design direction", "web design"]
+                "challenge": "Create a simple secure password generator for Chrome that creates a secure password at a click.",
+                "outcome": "Designed and built Pretty Password Chrome extension and product site. It was interesting configuring Webpack and SASS to work with the Chrome extension framework.",
+                "deliverables": ["development","product page", "chrome extension", "design direction", "web design"]
             },
             "main": {
-                "overview": "Build an aesthetic chrome extension that generates a secure password on click to facilitate security workflow.",
+                "overview": "",
                 "features": "",
-                "challenge": "Design and develop a simple, password generator that operates in the chrome browser.",
-                "solution": "Worked through how to build Chrome extensions. Utilized a password generating npm package to handle password creation. Designed a more aesthetic UI and UX.",
-                "result": "The Pretty Password Chrome extension and Gatsby product page.",
-                "deliverables": ["development", "design direction", "web design"],
+                "challenge": "",
+                "solution": "",
+                "result": "",
+                "deliverables": [],
                 "takeaways": ""
             },
             "role": "developer"
@@ -135,15 +135,15 @@
                 "imgOne": "../assets/images/projects/nw-ss-showcase-1.png"
             },
             "summary": {
-                "challenge": "Create a brand, web experience and initial business lead funnel with automated email campaign. ",
+                "challenge": "Create a brand, web experience and initial business lead funnel with automated email campaign. Design a brand identity, color, typography and mark that positioned itself at the desired market.",
                 "outcome": "Design of a unique boutique agency site with clear experience defining services and funnel to lead capture. ",
                 "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
-                "overview": "Northern Wind & Southern Sun is an agency website focused on creating cohesive brand and digital experiences.",
-                "objective": "Build a web experience that fosters value and a clear understanding of the type and feel of the work that Northern Wind & Southern Sun produces. The goal was to be opinionated and clean as a method of passive prequalifying potential leads.",
+                "overview": "",
+                "objective": "",
                 "features": "",
-                "challenge": "Design a brand identity, color, typography and mark that positioned itself at the desired market. Leading to lead generation in the form of email capture.",
+                "challenge": "",
                 "solution": "",
                 "result": "",
                 "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"],
@@ -173,9 +173,9 @@
                 "imgOne": "../assets/images/projects/yogaofwords-showcase-1.png"
             },
             "summary": {
-                "challenge": "Create a digital poetry and prose experience",
-                "outcome": "Produced a Gatsby and CMS enabled blog that showcase poetry and prose in a unique and meaningful way",
-                "deliverables": ["branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
+                "challenge": "Create a digital poetry and prose experience with CMS support.",
+                "outcome": "Produced a unique Gatsby site integrated with Netlify CMS enabling easy posting. Built a poetry and prose experience in a unique and meaningful way",
+                "deliverables": ["website","branding", "design direction", "user experience design", "web design", "development", "email design and automation"]
             },
             "main": {
                 "overview": "",

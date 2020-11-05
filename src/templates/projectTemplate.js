@@ -67,6 +67,19 @@ export default function Template(props, location) {
               <div className="body__large margin__bottom--m margin__top">
                 {summary.outcome}
               </div>
+              <div className="margin__bottom--m">
+                {page.audio ? (
+                  <>
+                    <div className="strong margin__y ">
+                      Listen to the project summary
+                    </div>
+                    <audio controls ref={audioElement}>
+                      <source src={page.audio} type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </>
+                ) : undefined}
+              </div>
               <div className="container flex flex__sp-b margin__bottom--m">
                 <div>
                   <div className="strong margin__bottom ">
@@ -104,19 +117,6 @@ export default function Template(props, location) {
                   })}
                 </div>
               </div>
-            </div>
-            <div>
-              {page.audio ? (
-                <>
-                  <div className="strong margin__y ">
-                    Listen to the project summary
-                  </div>
-                  <audio controls ref={audioElement}>
-                    <source src={page.audio} type="audio/mpeg" />
-                    Your browser does not support the audio element.
-                  </audio>
-                </>
-              ) : undefined}
             </div>
           </div>
           <div className="project__main margin__top--l ">

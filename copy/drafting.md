@@ -155,3 +155,11 @@
 - solution
 - result
 - deliverables
+
+---
+
+#### Northern Wind and Southern Sun
+
+Northern Wind & Southern Sun is an agency website focused on creating cohesive brand and digital experiences.
+
+Build a web experience that fosters value and a clear understanding of the type and feel of the work that Northern Wind & Southern Sun produces. The goal was to be opinionated and clean as a method of passive prequalifying potential leads.

@@ -1,4 +1,3 @@
-
 /***
 **
 ** BreakPoints 
@@ -7,7 +6,7 @@
 ***/
 
 $media-small : 750px;
-$media-med   : 960px;
+$media-med : 960px;
 $media-large : 1200px;
 $media-xlarge: 1400px;
 
@@ -73,16 +72,17 @@ $bg-sec: $color-grey-8;
 $type-base-size: 18px;
 
 // body variables 
-$base-family     : 'Montserrat', sans-serif;
-$base-line-height: 1.3;
-$base-weight     : 500;
+$base-family : 'Montserrat',
+sans-serif;
+$base-line-height: 1.4;
+$base-weight : 500;
 
 // header variables 
-$header-family     : 'Montserrat', sans-serif;
-$header-base-size  : $type-base-size;
+$header-family : 'Montserrat',
+sans-serif;
+$header-base-size : $type-base-size;
 $header-line-height: $base-line-height;
-$header-weight     : 400;
-$type-scaler       : 1.33;
+$header-weight : 400;
+$type-scaler : 1.33;
 
 $display-family: $header-family;
-

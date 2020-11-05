@@ -31,7 +31,10 @@ dl,
 figure,
 blockquote,
 table,
-hr {
+hr,
+.body__default,
+.body__large,
+.body__small {
   font-family: $base-family;
   font-weight: $base-weight;
   line-height: $base-line-height;
