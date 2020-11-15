@@ -16,8 +16,10 @@
 - [x] developer/admin contact
 - [x] seo
 - [x] bread crumbs
+- [ ] clickoutside top nav
 - [ ] add light/dark mode toggle
 - [x] fix hover and focus states of links (check footer)
+- [ ] get feedback reddit
 
 ---
 

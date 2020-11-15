@@ -7,15 +7,15 @@ import SEO from '../components/seo'
 
 const Post = ({ post, progress }) => {
   return (
-    <div className={`post card article`}>
+    <article className={`post card article`}>
       <Link to={post.fields.path}>
         <div className="post__content">
-          <div className="post__header">
+          <header className="post__header">
             <h4 className="post__title">{post.frontmatter.title}</h4>
             <div className="post__date">
               {post.frontmatter.date_created}
             </div>
-          </div>
+          </header>
           <div className="post__body">
             <h6 className="body__large post__description">
               {post.frontmatter.description}
@@ -26,7 +26,7 @@ const Post = ({ post, progress }) => {
                 <div className=" container categories ">
                   {post.frontmatter.categories.map((c, i) => (
                     <div
-                      key={i + c.replace(' ', '-')}
+                      key={i + c.replace(' ', '-').replace(',', '')}
                       className="category body"
                     >
                       {c},
@@ -39,7 +39,7 @@ const Post = ({ post, progress }) => {
                 <div className="container tags ">
                   {post.frontmatter.tags.map((t, i) => (
                     <div
-                      key={i + t.replace(' ', '-')}
+                      key={i + t.replace(' ', '-').replace(',', '')}
                       className="tag body"
                     >
                       {t},
@@ -51,7 +51,7 @@ const Post = ({ post, progress }) => {
           </div>
         </div>
       </Link>
-    </div>
+    </article>
   )
 }
 

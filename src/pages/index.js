@@ -69,7 +69,7 @@ const HomePage = ({ data, location }) => {
           <div className="hero">
             <div className="hero__content content__container margin__left--m">
               <h2 className="">
-                Hello, I am Lucas thanks for stopping by.
+                Hello, I am Lucas. Thanks for stopping&nbsp;by.
               </h2>
               <h5>
                 Mostly a Frontend developer focusing on Reactjs.

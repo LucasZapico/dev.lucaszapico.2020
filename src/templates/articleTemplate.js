@@ -27,7 +27,7 @@ export default function Template({
     <Layout>
       <div className="page articles content--container">
         <div className="articles page">
-          <div className="article measure__default margin__y--l">
+          <article className="article measure__default margin__y--l">
             <h1>{frontmatter.title}</h1>
             <div className="body">{frontmatter.date_created}</div>
             <div className="margin__top--m breadcrumb">
@@ -77,7 +77,7 @@ export default function Template({
                 ) : undefined}
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </Layout>
