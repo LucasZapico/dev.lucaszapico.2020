@@ -1,7 +1,1 @@
-<svg id="l-mark--light" width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<g clipPath="url(#clip0)">
-		<rect width="300" height="300" fill="" />
-		<circle id="outer" cx="150" cy="150" r="150" fill="#f2f9f9" />
-		<circle id="inner" cx="141" cy="181" r="120"  fill="#1D1D1E" />
-	</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="l-mark--light" width="300" height="300" fill="none" viewBox="0 0 300 300"><g clipPath="url(#clip0)"><rect width="300" height="300"/><circle id="outer" cx="150" cy="150" r="150" fill="#f2f9f9"/><circle id="inner" cx="141" cy="181" r="120" fill="#1D1D1E"/></g></svg>
