@@ -1,4 +1,4 @@
-@mixin headerType($header-family, $header-base-size, $header-line-height, $header-weight, $type-scaler) {
+@mixin headerType($header-family, $header-line-height, $header-weight) {
 
   .display,
   h1,
@@ -17,10 +17,6 @@
     line-height: $header-line-height;
     margin: 0px;
     font-weight: $header-weight;
-
-    &__strong {
-      font-weight: 900; // todo add strong header variable
-    }
   }
 }
 
@@ -158,7 +154,7 @@ blockquote {
   }
 }
 
-@include headerType($header-family, $header-base-size, $header-line-height, $header-weight, $type-scaler);
+@include headerType($header-family, $header-line-height, $header-weight);
 
 
 @media screen and (min-width: 100px) {
