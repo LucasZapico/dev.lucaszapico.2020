@@ -23,7 +23,7 @@ const Footer = () => {
             <h4>Cheers</h4>
             <div className="contact__email">
               <div className="contact__header">
-                Let's build something unqiue.
+                Let's build something unique.
               </div>
               <a
                 target="_blank"
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
           <div>
             {/*  */}
-            Last-Modified: '2020/11/04'
+            Last-Modified: '2020/11/21'
             {/*  */}
           </div>
         </div>
