@@ -1,6 +1,6 @@
 import React from 'react'
-// import Link from "gatsby-plugin-transition-link/AniLink"
-import { Link } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import { IoIosArrowRoundForward } from 'react-icons/io'
