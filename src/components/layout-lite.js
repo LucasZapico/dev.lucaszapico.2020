@@ -5,13 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-
-
-import "../assets/sass/_style.scss"
+import '../assets/sass/_style.scss'
+import Scrollbar from 'react-smooth-scrollbar'
 
 const LayoutLite = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +25,11 @@ const LayoutLite = ({ children }) => {
 
   return (
     <>
-      <div className="container">{children}</div>
+      <Scrollbar>
+        <div className="container" style={{ height: '100vh' }}>
+          {children}
+        </div>
+      </Scrollbar>
       {/* add script tags that need to be at the bottom of body */}
     </>
   )
