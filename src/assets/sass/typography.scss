@@ -162,8 +162,7 @@ blockquote {
   $header-base-size: $type-base-size; //16px;
   @include typeScales($header-base-size, $type-scaler);
 
-  h1,
-  h2,
+
   h3,
   h4,
   h5,
@@ -314,8 +313,7 @@ blockquote {
   $header-base-size: $type-base-size; //16px;
   @include typeScales($header-base-size, $type-scaler);
 
-  h1,
-  h2,
+
   h3,
   h4,
   h5,
