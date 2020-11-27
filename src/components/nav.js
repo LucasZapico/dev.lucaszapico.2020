@@ -56,12 +56,12 @@ const PrimaryNav = () => {
       <div className="nav__container">
         <nav className="nav ">
           <div className="mark">
-            <Link to="/">
+            <Link fade duration={1} to="/">
               <Mark />
             </Link>
           </div>
           {width > 800 ? (
-            <Link to="/">
+            <Link fade duration={1} to="/">
               <div className="nav__header h4">Dev.LucasZapico</div>
             </Link>
           ) : undefined}

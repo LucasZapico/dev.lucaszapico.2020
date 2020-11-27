@@ -1,14 +1,15 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import SEO from '../components/seo'
 
 const Post = ({ post, progress }) => {
   return (
     <article className={`post card article`}>
-      <Link to={post.fields.path}>
+      <Link fade duration={1} to={post.fields.path}>
         <div className="post__content">
           <header className="post__header">
             <h4 className="post__title">{post.frontmatter.title}</h4>
