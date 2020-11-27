@@ -39,8 +39,8 @@ const AboutPage = ({ data, location }) => (
         </p>
 
         <Link
-          swipe
-          top="entry"
+          fade
+          duration={1}
           to="/"
           className="icon__arrow link__primary--dark "
         >

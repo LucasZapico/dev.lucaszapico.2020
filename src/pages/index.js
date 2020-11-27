@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import SEO from '../components/seo'
 
@@ -47,8 +48,8 @@ const ProjectSection = ({ projectData, progress }) => {
         </div>
 
         <Link
-          swipe
-          direction="right"
+          fade
+          duration={1}
           to={projectData.path}
           className="icon__arrow link__primary--dark"
         >

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import SEO from '../components/seo'
-import { Link } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
@@ -173,8 +173,8 @@ export default function Template(props, location) {
             <div className="">
               {prev !== null ? (
                 <Link
-                  swipe
-                  direction="left"
+                  fade
+                  duration={1}
                   to={prev.path}
                   className="icon__arrow AniLink__primary--dark"
                 >
@@ -185,6 +185,8 @@ export default function Template(props, location) {
             <div className="">
               {next !== null ? (
                 <Link
+                  fade
+                  duration={1}
                   to={next.path}
                   className="icon__arrow AniLink__primary--dark"
                 >

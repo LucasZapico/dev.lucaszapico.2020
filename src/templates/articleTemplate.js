@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 import Layout from '../components/layout'
 
 import {
@@ -31,9 +32,17 @@ export default function Template({
             <h1>{frontmatter.title}</h1>
             <div className="body">{frontmatter.date_created}</div>
             <div className="margin__top--m breadcrumb">
-              <Link to="/">Home /</Link>
-              <Link to="/articles"> Articles / </Link>
-              <Link to={path}> {frontmatter.title}</Link>
+              <Link fade duration={1} to="/">
+                Home /
+              </Link>
+              <Link fade duration={1} to="/articles">
+                {' '}
+                Articles /{' '}
+              </Link>
+              <Link fade duration={1} to={path}>
+                {' '}
+                {frontmatter.title}
+              </Link>
             </div>
             <div className="margin__top--m">
               <div className="">Categories</div>
@@ -56,8 +65,8 @@ export default function Template({
               <div className="">
                 {prev !== null ? (
                   <Link
-                    swipe
-                    direction="left"
+                    fade
+                    duration={1}
                     to={prev.fields.path}
                     className="icon__arrow AniLink__primary--dark"
                   >
@@ -68,6 +77,8 @@ export default function Template({
               <div className="">
                 {next !== null ? (
                   <Link
+                    fade
+                    duration={1}
                     to={next.fields.path}
                     className="icon__arrow AniLink__primary--dark"
                   >

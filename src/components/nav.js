@@ -2,20 +2,26 @@ import React, { useState } from 'react'
 import Mark from '../assets/images/mark.svg'
 import MarkLight from '../assets/images/mark-light.svg'
 import { IoIosMenu, IoIosClose } from 'react-icons/io'
-import { Link } from 'gatsby'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 
 const PrimaryMenu = () => (
   <div className="pri-menu">
     <ul className="pri-menu__items">
       <div>
         <li className="pri-menu__item h3">
-          <Link to="/">Home</Link>
+          <Link fade duration={1} to="/">
+            Home
+          </Link>
         </li>
         <li className="pri-menu__item h3">
-          <Link to="/about">About</Link>
+          <Link fade duration={1} to="/about">
+            About
+          </Link>
         </li>
         <li className="pri-menu__item h3">
-          <Link to="/articles">Articles</Link>
+          <Link fade duration={1} to="/articles">
+            Articles
+          </Link>
         </li>
       </div>
       <div>
