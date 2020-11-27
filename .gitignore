@@ -1,3 +1,6 @@
+# remove package-lock dude to netlfiy build error 
+package-lock.json
+
 # Logs
 logs
 *.log
