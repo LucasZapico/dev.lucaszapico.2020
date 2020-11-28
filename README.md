@@ -15,11 +15,11 @@
 - [ ] add open issue on github
 - [ ] add animations
 - [ ] enhance categories and tag ui
-- [ ] add hover effect to articles
+- [x] add hover effect to articles
 - [ ] scroll to top button
-- [ ] add links to footer
+- [x] add links to footer
 
 ## Article Backlog
 
-- [ ] Green star new project articles
+- [x] Green star new project articles
 - [ ] Quotible project article
