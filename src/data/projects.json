@@ -36,8 +36,8 @@
         "imgOne": "../assets/images/projects/luv-coffee-feature.png"
       },
       "summary": {
-        "challenge": "Design a mock brand for a coffee shop and build our the shopping UI and UX",
-        "outcome": "A UX and UI designed in Figma and built with Gatsbyjs the next step of this project is to work through the integration with Shopify",
+        "challenge": "Design a mock brand for a coffee shop and build out the shopping UI and UX",
+        "outcome": "A UX and UI designed in Figma and built with Gatsbyjs. The next step of this project is to work through the integration with Shopify API",
         "deliverables": [
           "website",
           "user experience design",

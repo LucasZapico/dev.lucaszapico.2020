@@ -2,10 +2,10 @@
 title: 'Green Star News Gatsby Project'
 description: 'Quick play mock of a news website with Gatsby'
 date-created: 2020/10/2
-last-modified: '2020/11/14'
+last-modified: '2020/11/27'
 isdraft: true
 categories: ['gatsby', 'project', 'react']
-tags: ['']
+tags: []
 type: 'post'
 ---
 
