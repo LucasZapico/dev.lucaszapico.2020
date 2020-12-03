@@ -25,11 +25,9 @@ const LayoutLite = ({ children }) => {
 
   return (
     <>
-      <Scrollbar>
         <div className="container" style={{ height: '100vh' }}>
           {children}
         </div>
-      </Scrollbar>
       {/* add script tags that need to be at the bottom of body */}
     </>
   )
